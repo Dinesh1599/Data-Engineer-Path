@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL_New/String Calculation.md",
+                "file": "dbt/DBT Testing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "String Calculation"
+              "title": "DBT Testing"
             }
           }
         ],
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#TtA",
+                "query": "dbt",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -196,6 +196,11 @@
   },
   "active": "e24c0a61aade1a92",
   "lastOpenFiles": [
+    "Data Modeling/Data Modeling.md",
+    "dbt/DBT Testing.md",
+    "Data warehouse/Snowflake/Connector, drivers and Partner tools.md",
+    "SQL_New/String Calculation.md",
+    "dbt",
     "SQL_New/String Functions.md",
     "SQL_New/String Manipulation.md",
     "Data warehouse/Snowflake/Clustering.md",
@@ -214,15 +219,11 @@
     "SQL/INNER JOIN.md",
     "SQL_New/Numeric Functions.md",
     "SQL/FULL OUTER JOIN.md",
-    "SQL_New/String Calculation.md",
     "SQL_New/Stored Procedures.md",
     "Data warehouse/Snowflake/Stored Procedure.md",
     "SQL_New/Advanced SQL Techniques.md",
     "SQL_New/Aggregations and Analytical Functions.md",
     "Data warehouse/Snowflake/Snowflake Functions.md",
-    "Data warehouse/Snowflake/UDF.md",
-    "SQL_New/UNION.md",
-    "SQL/SQL Execution Order.md",
     "images/Screenshot 2026-01-27 at 10.17.36 AM.png",
     "SQL_New",
     "Data warehouse/Databricks",
@@ -242,7 +243,6 @@
     "Databases/PostgreSQL",
     "Databases/Neo4j",
     "images/Pasted image 20250814032054.png",
-    "images",
     "images/Pasted image 20251217220309.png",
     "images/Pasted image 20251124213546.png",
     "images/Pasted image 20251124213204.png",
