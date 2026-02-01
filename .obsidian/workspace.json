@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data warehouse/Snowflake/Clustering.md",
+                "file": "SQL_New/String Calculation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Clustering"
+              "title": "String Calculation"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data warehouse/Snowflake/Clustering.md",
+                "file": "SQL_New/String Calculation.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Clustering"
+              "title": "Backlinks for String Calculation"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data warehouse/Snowflake/Clustering.md",
+                "file": "SQL_New/String Calculation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Clustering"
+              "title": "Outgoing links from String Calculation"
             }
           },
           {
@@ -196,6 +196,9 @@
   },
   "active": "e24c0a61aade1a92",
   "lastOpenFiles": [
+    "SQL_New/String Functions.md",
+    "SQL_New/String Manipulation.md",
+    "Data warehouse/Snowflake/Clustering.md",
     "SQL_New/Filtering Data.md",
     "SQL_New/Logical Operators.md",
     "Untitled.canvas",
@@ -212,8 +215,6 @@
     "SQL_New/Numeric Functions.md",
     "SQL/FULL OUTER JOIN.md",
     "SQL_New/String Calculation.md",
-    "SQL_New/String Manipulation.md",
-    "SQL_New/String Functions.md",
     "SQL_New/Stored Procedures.md",
     "Data warehouse/Snowflake/Stored Procedure.md",
     "SQL_New/Advanced SQL Techniques.md",
