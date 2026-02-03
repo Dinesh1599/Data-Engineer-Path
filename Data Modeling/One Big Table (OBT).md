@@ -653,7 +653,6 @@ Monthly:
 ## Decision Checklist
 
 Before creating an OBT, verify:
-
 - [ ] **Use case is specific** (Dashboard X, ML model Y)
 - [ ] **Grain is clear** and documented
 - [ ] **Row count is manageable** (<10M safe, >100M careful)
@@ -946,20 +945,3 @@ Avoid OBT when:
 - Users are SQL-proficient
 
 ---
-
-## Resources & Further Reading
-
-- [[Star Schema vs OBT Comparison]]
-- [[Dimensional Modeling Best Practices]]
-- [[Data Warehouse Performance Tuning]]
-- [[BI Tool Optimization]]
-- [[Materialized Views]]
-- [[Incremental Data Loading Patterns]]
-
-## Tags
-
-#obt #data-modeling #denormalization #performance #dimensional-modeling #analytics-engineering #data-warehouse
-
----
-
-_Last updated: 2026-02-03_
