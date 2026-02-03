@@ -1,8 +1,8 @@
 {
   "collapse-filter": false,
-  "search": "pruning",
-  "showTags": false,
-  "showAttachments": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": true,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
@@ -102,6 +102,6 @@
   "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 500,
-  "scale": 0.8999950980923058,
+  "scale": 0.7959910282032646,
   "close": true
 }

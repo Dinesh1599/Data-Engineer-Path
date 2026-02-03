@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQL_New/Date & Time Functions.md",
+                "file": "Data Modeling/One Big Table (OBT).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Date & Time Functions"
-            }
-          },
-          {
-            "id": "e24c0a61aade1a92",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "dbt/DBT Testing.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "DBT Testing"
+              "title": "One Big Table (OBT)"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -194,8 +179,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e24c0a61aade1a92",
+  "active": "b8cf7bc0eddc98e1",
   "lastOpenFiles": [
+    "Data Modeling/One Big Table (OBT) - dbt.md",
+    "Data Modeling/One Big Table (OBT).md",
+    "SQL_New/Date & Time Functions.md",
+    "Data Modeling/OLTP vs OLAP.md",
+    "Data Modeling/Normalization.md",
+    "Data Modeling/Data modeling Techniques.md",
     "Data Modeling/Data Modeling.md",
     "dbt/DBT Testing.md",
     "Data warehouse/Snowflake/Connector, drivers and Partner tools.md",
@@ -207,7 +198,6 @@
     "SQL_New/Filtering Data.md",
     "SQL_New/Logical Operators.md",
     "Untitled.canvas",
-    "SQL_New/Date & Time Functions.md",
     "SQL_New/Row-Level Functions.md",
     "SQL_New/SQL.md",
     "SQL_New/Combining Data.md",
@@ -219,11 +209,6 @@
     "SQL/INNER JOIN.md",
     "SQL_New/Numeric Functions.md",
     "SQL/FULL OUTER JOIN.md",
-    "SQL_New/Stored Procedures.md",
-    "Data warehouse/Snowflake/Stored Procedure.md",
-    "SQL_New/Advanced SQL Techniques.md",
-    "SQL_New/Aggregations and Analytical Functions.md",
-    "Data warehouse/Snowflake/Snowflake Functions.md",
     "images/Screenshot 2026-01-27 at 10.17.36 AM.png",
     "SQL_New",
     "Data warehouse/Databricks",
