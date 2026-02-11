@@ -25,18 +25,26 @@
             "id": "2a28b0e18fdce8fe",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "8c96562ae8dbce9e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
               "state": {
-                "file": "Data Modeling/Questions to think about when creating a Data model.md",
-                "mode": "preview",
-                "source": false
+                "currentVersion": "1.11.7"
               },
-              "icon": "lucide-file",
-              "title": "Questions to think about when creating a Data model"
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +101,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5
+    "width": 268.5,
+    "collapsed": true
   },
   "right": {
     "id": "07442132946b28e0",
@@ -194,7 +203,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2a28b0e18fdce8fe",
+  "active": "8c96562ae8dbce9e",
   "lastOpenFiles": [
     "Data Modeling/Questions to think about when creating a Data model.md",
     "Data Modeling/Data Modeling.md",
