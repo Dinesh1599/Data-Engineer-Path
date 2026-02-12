@@ -63,6 +63,8 @@ WHERE Outlet_Size IS NULL
   AND Outlet_Location_Type IN ('Tier 1', 'Tier 2');
 	```
 
+### withColumnRenamed
+
 
 
 
