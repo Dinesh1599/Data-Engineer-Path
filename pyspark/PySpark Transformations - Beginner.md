@@ -67,8 +67,22 @@ WHERE Outlet_Size IS NULL
 - Renames a column at a DataFrame Level
 - Different from `.alias()` which only renames in that specific transformation 
 - Returns a new DataFrame (original unchanged)
+**Syntax:** ```python df.withColumnRenamed("old_name", "new_name") ```
 
+### withColumn()
+- If column name is **NEW** → creates new column 
+- If column name **EXISTS** → modifies that column 
+- Returns a new DataFrame (original unchanged)
+```python 
+# Add a constant value 
+df = df.withColumn("flag", lit("new")) 
 
+# Calculate from existing columns 
+df = df.withColumn("total", col("price") * col("quantity")) 
+
+# Create from function 
+df = df.withColumn("upper_name", upper(col("name"))) 
+```
 
 
 
