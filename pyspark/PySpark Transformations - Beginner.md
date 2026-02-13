@@ -64,6 +64,9 @@ WHERE Outlet_Size IS NULL
 	```
 
 ### withColumnRenamed
+- Renames a column at a DataFrame Level
+- Different from `.alias()` which only renames in that specific transformation 
+- Returns a new DataFrame (original unchanged)
 
 
 
