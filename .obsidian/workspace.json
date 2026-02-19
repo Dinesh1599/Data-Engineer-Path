@@ -11,14 +11,12 @@
             "id": "41b6f0283ab3edd7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Data warehouse/Snowflake/Secure Data Sharing.md",
-                "mode": "source",
-                "source": false
+                "file": "Data warehouse/Good reference.png"
               },
-              "icon": "lucide-file",
-              "title": "Secure Data Sharing"
+              "icon": "lucide-image",
+              "title": "Good reference"
             }
           }
         ]
@@ -179,21 +177,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "41b6f0283ab3edd7",
+  "active": "8bb36002b09ef60b",
   "lastOpenFiles": [
+    "Pyspark/PySpark Transformations - Beginner.md",
+    "Data warehouse/Good reference.png",
+    "Pyspark/Reading a file in PySpark.md",
+    "Pyspark/DDL and StructType  in PySpark.md",
+    "Pyspark/Go to Pyspark commands.md",
+    "Data warehouse/Snowflake/Secure Data Sharing.md",
     "Data warehouse/Snowflake/Snowflake.md",
     "Data warehouse/Snowflake/Data Sampling.md",
     "Data warehouse/Snowflake/Virtual Warehouse States.md",
     "Data warehouse/Snowflake/Semi-structured data.md",
     "Data warehouse/Snowflake/Security Privileges.md",
     "Data warehouse/Snowflake/Secure View.md",
-    "Data warehouse/Snowflake/Secure Data Sharing.md",
     "Data warehouse/Snowflake/Search Optimization Service.md",
-    "Pyspark/PySpark Transformations - Beginner.md",
-    "Pyspark/Go to Pyspark commands.md",
-    "Pyspark/DDL and StructType  in PySpark.md",
     "Pyspark/Pyspark.md",
-    "Pyspark/Reading a file in PySpark.md",
     "Untitled.base",
     "Data Modeling/Questions to think about when creating a Data model.md",
     "Data Modeling/Data Modeling.md",
@@ -208,7 +207,6 @@
     "SQL_New/String Calculation.md",
     "dbt",
     "SQL_New/String Functions.md",
-    "SQL_New/String Manipulation.md",
     "Untitled.canvas",
     "images/Screenshot 2026-01-27 at 10.17.36 AM.png",
     "SQL_New",
@@ -230,7 +228,6 @@
     "images/Pasted image 20250814032054.png",
     "images/Pasted image 20251217220309.png",
     "images/Pasted image 20251124213546.png",
-    "images/Pasted image 20251124213204.png",
     "Untitled 1.canvas"
   ]
 }
