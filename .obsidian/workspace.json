@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pyspark/PySpark Transformations - Beginner.md",
+                "file": "Data warehouse/Snowflake/Secure Data Sharing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PySpark Transformations - Beginner"
+              "title": "Secure Data Sharing"
             }
           }
         ]
@@ -181,10 +181,18 @@
   },
   "active": "41b6f0283ab3edd7",
   "lastOpenFiles": [
+    "Data warehouse/Snowflake/Snowflake.md",
+    "Data warehouse/Snowflake/Data Sampling.md",
+    "Data warehouse/Snowflake/Virtual Warehouse States.md",
+    "Data warehouse/Snowflake/Semi-structured data.md",
+    "Data warehouse/Snowflake/Security Privileges.md",
+    "Data warehouse/Snowflake/Secure View.md",
+    "Data warehouse/Snowflake/Secure Data Sharing.md",
+    "Data warehouse/Snowflake/Search Optimization Service.md",
+    "Pyspark/PySpark Transformations - Beginner.md",
     "Pyspark/Go to Pyspark commands.md",
     "Pyspark/DDL and StructType  in PySpark.md",
     "Pyspark/Pyspark.md",
-    "Pyspark/PySpark Transformations - Beginner.md",
     "Pyspark/Reading a file in PySpark.md",
     "Untitled.base",
     "Data Modeling/Questions to think about when creating a Data model.md",
@@ -201,15 +209,7 @@
     "dbt",
     "SQL_New/String Functions.md",
     "SQL_New/String Manipulation.md",
-    "Data warehouse/Snowflake/Clustering.md",
-    "SQL_New/Filtering Data.md",
-    "SQL_New/Logical Operators.md",
     "Untitled.canvas",
-    "SQL_New/Row-Level Functions.md",
-    "SQL_New/SQL.md",
-    "SQL_New/Combining Data.md",
-    "SQL_New/Query Data.md",
-    "SQL_New/Comparison Operator.md",
     "images/Screenshot 2026-01-27 at 10.17.36 AM.png",
     "SQL_New",
     "Data warehouse/Databricks",
