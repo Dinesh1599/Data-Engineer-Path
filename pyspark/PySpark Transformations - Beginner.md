@@ -227,3 +227,33 @@ SELECT * FROM table LIMIT 10;
 - Like Pandas `.head()`
 
 **Related:** [[PySpark Transformations - Beginner#7. sort() or orderBy() | sort]]
+## drop()
+
+**Purpose:** Removes one or more columns from DataFrame
+
+**Syntax:**
+```python
+df.drop("column_name")
+df.drop("col1", "col2", "col3")  # Multiple columns
+```
+
+**Examples:**
+```python
+# Drop single column
+df.drop("item_visibility")
+
+# Drop multiple columns
+df.drop("item_visibility", "item_type")
+```
+
+**SQL Equivalent:**
+```sql
+-- No direct DROP in SELECT, use exclusion
+SELECT col1, col2  -- (exclude unwanted columns)
+FROM table;
+```
+
+**Key Points:**
+- Returns new DataFrame (original unchanged)
+- Can drop multiple columns in one call
+- Opposite of `.select()`
