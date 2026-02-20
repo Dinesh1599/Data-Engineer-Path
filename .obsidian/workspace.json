@@ -11,12 +11,14 @@
             "id": "41b6f0283ab3edd7",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Data warehouse/Good reference.png"
+                "file": "Pyspark/PySpark Transformations - Beginner.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Good reference"
+              "icon": "lucide-file",
+              "title": "PySpark Transformations - Beginner"
             }
           }
         ]
@@ -177,10 +179,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8bb36002b09ef60b",
+  "active": "41b6f0283ab3edd7",
   "lastOpenFiles": [
-    "Pyspark/PySpark Transformations - Beginner.md",
     "Data warehouse/Good reference.png",
+    "Pyspark/PySpark Transformations - Beginner.md",
     "Pyspark/Reading a file in PySpark.md",
     "Pyspark/DDL and StructType  in PySpark.md",
     "Pyspark/Go to Pyspark commands.md",
