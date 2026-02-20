@@ -122,3 +122,75 @@ REGEXP_REPLACE(text, 'old', 'new')
 ```
 
 **Related:** [[col]], [[withColumn]], [[regexp_replace]], [[split]]
+
+## Date Functions
+
+**Purpose:** Work with date and timestamp columns
+
+**Common Functions:**
+
+### Current Date/Time
+```python
+from pyspark.sql.functions import *
+
+current_date()           # Today's date
+current_timestamp()      # Current timestamp
+```
+
+### Date Arithmetic
+```python
+date_add(col("date"), 7)        # Add 7 days
+date_sub(col("date"), 7)        # Subtract 7 days
+datediff(col("end"), col("start"))  # Days between dates
+months_between(col("end"), col("start"))  # Months between
+add_months(col("date"), 3)      # Add 3 months
+```
+
+### Date Extraction
+```python
+year(col("date"))        # Extract year
+month(col("date"))       # Extract month
+dayofmonth(col("date"))  # Extract day
+dayofweek(col("date"))   # Day of week (1=Sunday)
+hour(col("timestamp"))   # Extract hour
+minute(col("timestamp")) # Extract minute
+```
+
+### Date Formatting
+```python
+date_format(col("date"), "yyyy-MM-dd")  # Format date as string
+to_date(col("string"), "yyyy-MM-dd")    # String to date
+to_timestamp(col("string"), "yyyy-MM-dd HH:mm:ss")  # String to timestamp
+```
+
+**Examples:**
+```python
+# Add week to current date
+df.withColumn("next_week", date_add(current_date(), 7))
+
+# Calculate age in days
+df.withColumn("days_old", datediff(current_date(), col("birth_date")))
+
+# Format date
+df.withColumn("formatted", date_format(col("date"), "MM/dd/yyyy"))
+
+# Extract year
+df.withColumn("year", year(col("order_date")))
+```
+
+**SQL Equivalents:**
+```sql
+CURRENT_DATE
+DATE_ADD(date, INTERVAL 7 DAY)
+DATEDIFF(end_date, start_date)
+DATE_FORMAT(date, '%Y-%m-%d')
+YEAR(date)
+MONTH(date)
+```
+
+**Key Points:**
+- Date format patterns: `yyyy` (year), `MM` (month), `dd` (day), `HH` (hour)
+- `datediff()` returns integer (number of days)
+- Use `to_date()` to convert strings to proper date type
+
+**Related:** [[date_format]], [[datediff]], [[current_date]], [[to_date]]
