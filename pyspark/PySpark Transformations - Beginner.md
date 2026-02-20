@@ -227,7 +227,7 @@ SELECT * FROM table LIMIT 10;
 - Like Pandas `.head()`
 
 **Related:** [[PySpark Transformations - Beginner#7. sort() or orderBy() | sort]]
-## drop()
+## 9. drop()
 
 **Purpose:** Removes one or more columns from DataFrame
 
@@ -257,3 +257,42 @@ FROM table;
 - Returns new DataFrame (original unchanged)
 - Can drop multiple columns in one call
 - Opposite of `.select()`
+## 10. dropDuplicates()
+
+**Purpose:** Removes duplicate rows from DataFrame
+
+**Syntax:**
+```python
+df.dropDuplicates()  # All columns
+df.dropDuplicates(["col1", "col2"])  # Subset of columns
+df.drop_duplicates()  # Pandas-style alias (with underscore)
+```
+
+**Examples:**
+```python
+# Remove duplicates based on all columns
+df.dropDuplicates()
+
+# Remove duplicates based on specific columns
+df.dropDuplicates(["item_type"])  # Keep only unique item types
+
+# Multiple columns
+df.dropDuplicates(["user_id", "product_id"])
+```
+
+**SQL Equivalent:**
+```sql
+-- All columns
+SELECT DISTINCT * FROM table;
+
+-- Specific columns
+SELECT DISTINCT item_type FROM table;
+```
+
+**Key Points:**
+- Without arguments = deduplicates on ALL columns
+- With `subset` = deduplicates only on specified columns
+- Also called "deduping" the data
+- Keeps first occurrence, drops rest
+
+**Related:** [[distinct]], [[drop]], [[subset]]
