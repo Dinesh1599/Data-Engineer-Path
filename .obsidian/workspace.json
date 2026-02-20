@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data warehouse/Snowflake/Clustering.md",
+                "file": "Pyspark/PySpark Transformations - Beginner.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Clustering"
+              "title": "PySpark Transformations - Beginner"
             }
           }
         ],
@@ -196,10 +196,13 @@
   },
   "active": "8565e47c59c5d5e6",
   "lastOpenFiles": [
+    "Pyspark/PySpark Transformations - Intermediate.md",
+    "Pyspark/Pyspark.md",
+    "Pyspark/Reading a file in PySpark.md",
     "Pyspark/PySpark Transformations - Beginner.md",
+    "Data warehouse/Snowflake/Clustering.md",
     "withColumn.md",
     "Data warehouse/Good reference.png",
-    "Pyspark/Reading a file in PySpark.md",
     "Pyspark/DDL and StructType  in PySpark.md",
     "Pyspark/Go to Pyspark commands.md",
     "Data warehouse/Snowflake/Secure Data Sharing.md",
@@ -210,7 +213,6 @@
     "Data warehouse/Snowflake/Security Privileges.md",
     "Data warehouse/Snowflake/Secure View.md",
     "Data warehouse/Snowflake/Search Optimization Service.md",
-    "Pyspark/Pyspark.md",
     "Untitled.base",
     "Data Modeling/Questions to think about when creating a Data model.md",
     "Data Modeling/Data Modeling.md",
@@ -222,9 +224,7 @@
     "SQL_New/Date & Time Functions.md",
     "dbt/DBT Testing.md",
     "Data warehouse/Snowflake/Connector, drivers and Partner tools.md",
-    "SQL_New/String Calculation.md",
     "dbt",
-    "SQL_New/String Functions.md",
     "Untitled.canvas",
     "images/Screenshot 2026-01-27 at 10.17.36 AM.png",
     "SQL_New",
