@@ -63,13 +63,13 @@ WHERE Outlet_Size IS NULL
   AND Outlet_Location_Type IN ('Tier 1', 'Tier 2');
 	```
 
-### withColumnRenamed
+## 4. withColumnRenamed
 - Renames a column at a DataFrame Level
 - Different from `.alias()` which only renames in that specific transformation 
 - Returns a new DataFrame (original unchanged)
 **Syntax:** ```python df.withColumnRenamed("old_name", "new_name") ```
 
-### withColumn()
+## 5. withColumn()
 - If column name is **NEW** → creates new column 
 - If column name **EXISTS** → modifies that column 
 - Returns a new DataFrame (original unchanged)
@@ -84,7 +84,7 @@ df = df.withColumn("total", col("price") * col("quantity"))
 df = df.withColumn("upper_name", upper(col("name"))) 
 ```
 
-## cast()
+## 6. cast()
 
 **Purpose:** Converts a column from one data type to another (type casting)
 
@@ -138,7 +138,66 @@ price::INTEGER  -- PostgreSQL shorthand
 - Use before joins to avoid type mismatch errors
 
 **Related:**
-- [[withColumn]] - often used together to modify columns
-- [[schema]] - defines column types when reading data
+- [[PySpark Transformations - Beginner#withColumn() | withColumn()]] - often used together to modify columns
 
+## 7. sort() or orderBy()
 
+**Purpose:** Sorts/orders a DataFrame by one or more columns
+
+**Syntax:**
+```python
+df.sort("column_name")  # ascending by default
+df.sort(col("column_name").desc())  # descending
+df.sort("col1", "col2")  # multiple columns
+```
+
+**Alias:** `orderBy()` - exact same function, interchangeable
+
+**Examples:**
+```python
+# Sort ascending (default)
+df.sort("item_weight")
+
+# Sort descending
+df.sort(col("item_weight").desc())
+# OR
+df.sort("item_weight", ascending=False)
+
+# Multiple columns
+df.sort("category", col("price").desc())
+
+# Using asc/desc explicitly
+df.sort(col("item_weight").asc())
+
+# Multiple columns with mixed order
+df.sort(
+    col("item_type").desc(),
+    col("item_visibility").asc()
+)
+```
+
+**SQL Equivalent:**
+```sql
+-- PySpark
+df.sort("price", ascending=False)
+
+-- SQL
+SELECT * FROM table
+ORDER BY price DESC;
+```
+
+**Sort vs OrderBy:**
+- `sort()` and `orderBy()` are **identical**
+- Use whichever feels natural (SQL users prefer `orderBy`)
+
+**Important Notes:**
+- Sorting is **expensive** on large datasets (shuffles data)
+- Returns a new DataFrame
+- Default is ascending order
+- Use `.asc()` or `.desc()` for explicit control
+
+**Common Use Cases:**
+- Find top/bottom N records
+- Prepare data for display
+- Rank analysis
+- Time-series ordering
