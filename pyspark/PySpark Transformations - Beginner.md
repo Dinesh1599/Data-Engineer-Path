@@ -84,5 +84,6 @@ df = df.withColumn("total", col("price") * col("quantity"))
 df = df.withColumn("upper_name", upper(col("name"))) 
 ```
 
+### cast()
 
 
