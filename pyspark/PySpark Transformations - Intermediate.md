@@ -64,3 +64,61 @@ df1.unionByName(df2)    # ✅ Correctly aligned by name
 - Preferred in production code
 
 **Related:** [[union]], [[join]], [[concat]]
+
+## String Functions
+
+**Purpose:** Transform and manipulate string/text columns
+
+**Common Functions:**
+
+### Case Conversion
+```python
+from pyspark.sql.functions import *
+
+upper(col("name"))        # UPPERCASE
+lower(col("name"))        # lowercase
+initcap(col("name"))      # Proper Case (Title Case)
+```
+
+### String Manipulation
+```python
+concat(col("first"), lit(" "), col("last"))  # Concatenate
+substring(col("text"), 1, 5)                 # Extract substring (start, length)
+length(col("name"))                          # String length
+trim(col("text"))                            # Remove leading/trailing spaces
+ltrim(col("text"))                           # Remove leading spaces
+rtrim(col("text"))                           # Remove trailing spaces
+```
+
+### Pattern Matching
+```python
+regexp_replace(col("text"), "old", "new")    # Replace pattern
+regexp_extract(col("text"), r"\d+", 0)       # Extract with regex
+split(col("text"), ",")                      # Split into array
+```
+
+**Examples:**
+```python
+# Convert to uppercase
+df.withColumn("upper_name", upper(col("name")))
+
+# Replace text
+df.withColumn("clean_text", regexp_replace(col("text"), "bad", "good"))
+
+# Split column
+df.withColumn("items_array", split(col("items"), ","))
+```
+
+**SQL Equivalents:**
+```sql
+UPPER(name)
+LOWER(name)
+INITCAP(name)
+CONCAT(first, ' ', last)
+SUBSTRING(text, 1, 5)
+LENGTH(name)
+TRIM(text)
+REGEXP_REPLACE(text, 'old', 'new')
+```
+
+**Related:** [[col]], [[withColumn]], [[regexp_replace]], [[split]]
