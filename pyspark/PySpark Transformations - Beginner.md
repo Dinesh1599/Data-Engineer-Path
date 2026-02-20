@@ -84,6 +84,61 @@ df = df.withColumn("total", col("price") * col("quantity"))
 df = df.withColumn("upper_name", upper(col("name"))) 
 ```
 
-### cast()
+## cast()
+
+**Purpose:** Converts a column from one data type to another (type casting)
+
+**Syntax:**
+```python
+col("column_name").cast("new_type")
+# OR
+col("column_name").cast(IntegerType())
+```
+
+**Common Data Types:**
+- `"string"` or `StringType()`
+- `"integer"` or `IntegerType()`
+- `"double"` or `DoubleType()`
+- `"boolean"` or `BooleanType()`
+- `"date"` or `DateType()`
+- `"timestamp"` or `TimestampType()`
+
+**Examples:**
+```python
+# Convert double to string
+df = df.withColumn("item_weight", col("item_weight").cast("string"))
+
+# Convert string to integer
+df = df.withColumn("age", col("age").cast("integer"))
+
+# Convert string to date
+df = df.withColumn("date", col("date_str").cast("date"))
+```
+
+**SQL Equivalent:**
+```sql
+-- PySpark
+col("price").cast("integer")
+
+-- SQL
+CAST(price AS INTEGER)
+-- OR
+price::INTEGER  -- PostgreSQL shorthand
+```
+
+**Common Use Cases:**
+- Prepare columns for joins (ensure matching types)
+- Fix schema issues after reading data
+- Convert strings to numeric for calculations
+- Prepare data for aggregations
+
+**Important:**
+- Invalid casts return `null` (e.g., "abc" → integer = null)
+- Always validate data before casting
+- Use before joins to avoid type mismatch errors
+
+**Related:**
+- [[withColumn]] - often used together to modify columns
+- [[schema]] - defines column types when reading data
 
 
