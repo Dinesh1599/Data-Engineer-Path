@@ -201,3 +201,29 @@ ORDER BY price DESC;
 - Prepare data for display
 - Rank analysis
 - Time-series ordering
+## 8. limit()
+
+**Purpose:** Returns first N rows from DataFrame
+
+**Syntax:**
+```python
+df.limit(n)
+```
+
+**Examples:**
+```python
+df.limit(10)  # First 10 rows
+df.sort(col("sales").desc()).limit(5)  # Top 5 by sales
+```
+
+**SQL Equivalent:**
+```sql
+SELECT * FROM table LIMIT 10;
+```
+
+**Key Points:**
+- No guaranteed order without `.sort()`
+- Very fast operation
+- Like Pandas `.head()`
+
+**Related:** [[PySpark Transformations - Beginner#7. sort() or orderBy() | sort]]
