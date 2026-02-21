@@ -229,6 +229,8 @@ WHERE outlet_size IS NOT NULL;
 - `how="any"` (default) - drop if ANY column is null
 - `how="all"` - drop only if ALL columns are null
 - `subset` - check only specified columns
+- `thresh` – minimum number of non-null values required to keep a row
+- `thresh` with `subset` – counts non-null values only in the specified columns
 - Returns new DataFrame
 
 ---
