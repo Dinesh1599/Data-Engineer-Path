@@ -25,12 +25,14 @@
             "id": "8565e47c59c5d5e6",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Data warehouse/Good reference.png"
+                "file": "Pyspark/PySpark Transformations - Intermediate.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Good reference"
+              "icon": "lucide-file",
+              "title": "PySpark Transformations - Intermediate"
             }
           }
         ],
@@ -194,15 +196,15 @@
   },
   "active": "8565e47c59c5d5e6",
   "lastOpenFiles": [
+    "Pyspark/PySpark Transformations - Beginner.md",
+    "Pyspark/PySpark Transformations - Intermediate.md",
+    "Data warehouse/Good reference.png",
     "Pyspark/Pyspark.md",
     "Spark/Apache Spark.md",
     "Spark/Spark Architecture.md",
     "Pyspark/Reading a file in PySpark.md",
-    "Pyspark/PySpark Transformations - Intermediate.md",
-    "Pyspark/PySpark Transformations - Beginner.md",
     "Data warehouse/Snowflake/Clustering.md",
     "withColumn.md",
-    "Data warehouse/Good reference.png",
     "Pyspark/DDL and StructType  in PySpark.md",
     "Pyspark/Go to Pyspark commands.md",
     "Data warehouse/Snowflake/Secure Data Sharing.md",
@@ -221,7 +223,6 @@
     "Data Modeling/Data modeling Techniques.md",
     "Data Modeling/One Big Table (OBT) - dbt.md",
     "Data Modeling/One Big Table (OBT).md",
-    "SQL_New/Date & Time Functions.md",
     "dbt",
     "Untitled.canvas",
     "images/Screenshot 2026-01-27 at 10.17.36 AM.png",

@@ -192,3 +192,92 @@ MONTH(date)
 - Date format patterns: `yyyy` (year), `MM` (month), `dd` (day), `HH` (hour)
 - `datediff()` returns integer (number of days)
 - Use `to_date()` to convert strings to proper date type
+## dropna()
+
+**Purpose:** Remove rows with null/missing values
+
+**Syntax:**
+```python
+df.dropna()  # Drop rows with ANY null
+df.dropna(how="all")  # Drop rows where ALL columns are null
+df.dropna(subset=["col1", "col2"])  # Drop based on specific columns
+```
+
+**Examples:**
+```python
+# Drop rows with any null
+df.dropna()
+
+# Drop only if ALL columns are null
+df.dropna(how="all")
+
+# Drop if specific column has null
+df.dropna(subset=["outlet_size"])
+
+# Drop if any of multiple columns has null
+df.dropna(subset=["col1", "col2"])
+```
+
+**SQL Equivalent:**
+```sql
+-- Drop rows with null in specific column
+SELECT * FROM table
+WHERE outlet_size IS NOT NULL;
+```
+
+**Key Points:**
+- `how="any"` (default) - drop if ANY column is null
+- `how="all"` - drop only if ALL columns are null
+- `subset` - check only specified columns
+- Returns new DataFrame
+
+---
+
+## fillna()
+
+**Purpose:** Replace null values with specified values
+
+**Syntax:**
+```python
+df.fillna(value)  # Fill all nulls
+df.fillna(value, subset=["col1"])  # Fill specific columns
+df.fillna({"col1": val1, "col2": val2})  # Different values per column
+```
+
+**Examples:**
+```python
+# Fill all nulls with "Unknown"
+df.fillna("Unknown")
+
+# Fill specific column
+df.fillna("Not Available", subset=["outlet_size"])
+
+# Fill different values for different columns
+df.fillna({
+    "outlet_size": "Unknown",
+    "item_weight": 0,
+    "sales": 0.0
+})
+```
+
+**SQL Equivalent:**
+```sql
+-- COALESCE or IFNULL
+SELECT COALESCE(outlet_size, 'Unknown') AS outlet_size
+FROM table;
+```
+
+**Key Points:**
+- Without `subset` - fills ALL columns
+- With `subset` - fills only specified columns
+- Can use dictionary for column-specific values
+- Type must match column type
+
+**Common Pattern:**
+```python
+# Drop critical nulls, fill others
+df = df.dropna(subset=["user_id"])  # Must have user_id
+df = df.fillna({"age": 0, "city": "Unknown"})  # Fill optional fields
+```
+
+**Related:** [[dropna]], [[isNull]], [[coalesce]]
