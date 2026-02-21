@@ -192,5 +192,3 @@ MONTH(date)
 - Date format patterns: `yyyy` (year), `MM` (month), `dd` (day), `HH` (hour)
 - `datediff()` returns integer (number of days)
 - Use `to_date()` to convert strings to proper date type
-
-**Related:** [[date_format]], [[datediff]], [[current_date]], [[to_date]]

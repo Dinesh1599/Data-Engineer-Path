@@ -25,14 +25,12 @@
             "id": "8565e47c59c5d5e6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Pyspark/PySpark Transformations - Intermediate.md",
-                "mode": "source",
-                "source": false
+                "file": "Data warehouse/Good reference.png"
               },
-              "icon": "lucide-file",
-              "title": "PySpark Transformations - Intermediate"
+              "icon": "lucide-image",
+              "title": "Good reference"
             }
           }
         ],
@@ -196,10 +194,12 @@
   },
   "active": "8565e47c59c5d5e6",
   "lastOpenFiles": [
-    "Pyspark/Reading a file in PySpark.md",
-    "Pyspark/PySpark Transformations - Beginner.md",
-    "Pyspark/PySpark Transformations - Intermediate.md",
     "Pyspark/Pyspark.md",
+    "Spark/Apache Spark.md",
+    "Spark/Spark Architecture.md",
+    "Pyspark/Reading a file in PySpark.md",
+    "Pyspark/PySpark Transformations - Intermediate.md",
+    "Pyspark/PySpark Transformations - Beginner.md",
     "Data warehouse/Snowflake/Clustering.md",
     "withColumn.md",
     "Data warehouse/Good reference.png",
@@ -222,8 +222,6 @@
     "Data Modeling/One Big Table (OBT) - dbt.md",
     "Data Modeling/One Big Table (OBT).md",
     "SQL_New/Date & Time Functions.md",
-    "dbt/DBT Testing.md",
-    "Data warehouse/Snowflake/Connector, drivers and Partner tools.md",
     "dbt",
     "Untitled.canvas",
     "images/Screenshot 2026-01-27 at 10.17.36 AM.png",

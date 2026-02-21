@@ -11,4 +11,5 @@ Topics:
 [[Reading a file in PySpark]]
 [[DDL and StructType  in PySpark]]
 [[PySpark Transformations - Beginner]]
+[[PySpark Transformations - Intermediate]]
 
