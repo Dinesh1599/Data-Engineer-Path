@@ -233,8 +233,6 @@ WHERE outlet_size IS NOT NULL;
 - `thresh` with `subset` – counts non-null values only in the specified columns
 - Returns new DataFrame
 
----
-
 ## fillna()
 
 **Purpose:** Replace null values with specified values
@@ -282,4 +280,4 @@ df = df.dropna(subset=["user_id"])  # Must have user_id
 df = df.fillna({"age": 0, "city": "Unknown"})  # Fill optional fields
 ```
 
-**Related:** [[dropna]], [[isNull]], [[coalesce]]
+## d
