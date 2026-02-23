@@ -152,5 +152,100 @@ data.groupBy("date").pivot("metric_name").avg("value")
 experiments.groupBy("feature").pivot("test_group").avg("conversion_rate")
 ```
 
+## when() / otherwise()
+
+**Purpose:** SQL CASE WHEN equivalent - conditional logic for creating/transforming columns
+
+**Syntax:**
+```python
+when(condition, value).otherwise(default_value)
+
+# Multiple conditions (chained)
+when(condition1, value1) \
+  .when(condition2, value2) \
+  .otherwise(default_value)
+```
+
+**Examples:**
+
+### Simple If-Else
+```python
+# Create flag column
+df.withColumn("category",
+    when(col("age") < 18, "Minor")
+    .otherwise("Adult")
+)
+```
+
+### Multiple Conditions (If-ElseIf-Else)
+```python
+df.withColumn("grade",
+    when(col("score") >= 90, "A")
+    .when(col("score") >= 80, "B")
+    .when(col("score") >= 70, "C")
+    .otherwise("F")
+)
+```
+
+### Complex Conditions (AND/OR)
+```python
+# Using & (AND) and | (OR)
+df.withColumn("status",
+    when((col("age") >= 18) & (col("country") == "US"), "Eligible")
+    .when((col("age") >= 16) & (col("country") == "UK"), "Eligible")
+    .otherwise("Not Eligible")
+)
+```
+
+### Without otherwise()
+```python
+# Returns null if no condition matches
+df.withColumn("flag",
+    when(col("price") > 100, "Expensive")
+    # No otherwise - returns null for price <= 100
+)
+```
+
+**SQL Equivalent:**
+```sql
+CASE 
+  WHEN age < 18 THEN 'Minor'
+  ELSE 'Adult'
+END
+
+-- Multiple conditions
+CASE
+  WHEN score >= 90 THEN 'A'
+  WHEN score >= 80 THEN 'B'
+  WHEN score >= 70 THEN 'C'
+  ELSE 'F'
+END
+```
+
+**Key Points:**
+- Always import: `from pyspark.sql.functions import when`
+- Conditions evaluated **top to bottom** (first match wins)
+- Use parentheses `()` for complex conditions with `&` and `|`
+- `&` = AND, `|` = OR, `~` = NOT
+- `.otherwise()` is optional (defaults to null)
+
+**Common Patterns:**
+```python
+# Categorize numeric values
+when(col("sales") > 1000, "High")
+.when(col("sales") > 500, "Medium")
+.otherwise("Low")
+
+# Flag based on multiple columns
+when((col("type") == "Veg") & (col("price") > 100), "Expensive Veg")
+.otherwise("Other")
+
+# Nested conditions
+when(col("status") == "active",
+    when(col("premium") == True, "Premium Active")
+    .otherwise("Regular Active")
+)
+.otherwise("Inactive")
+```
 
 

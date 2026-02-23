@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pyspark/PySpark Transformations - Advanced.md",
+                "file": "Pyspark/PySpark Transformations - Intermediate.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PySpark Transformations - Advanced"
+              "title": "PySpark Transformations - Intermediate"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -194,14 +193,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9705304cd73658aa",
+  "active": "41b6f0283ab3edd7",
   "lastOpenFiles": [
     "Pyspark/PySpark Transformations - Intermediate.md",
-    "Pyspark/Pyspark.md",
     "Pyspark/PySpark Transformations - Advanced.md",
-    "Pyspark/PySpark Transformations - Beginner.md",
     "Pyspark/Tips to Remember.md",
+    "Pyspark/PySpark Transformations - Beginner.md",
     "Pyspark/Reading a file in PySpark.md",
+    "Pyspark/Pyspark.md",
     "SQL/SQL Execution Order.md",
     "Database Management Concepts/Performance Tips.md",
     "Pyspark/DDL and StructType  in PySpark.md",
