@@ -294,5 +294,3 @@ SELECT DISTINCT item_type FROM table;
 - With `subset` = deduplicates only on specified columns
 - Also called "deduping" the data
 - Keeps first occurrence, drops rest
-
-**Related:** [[distinct]], [[drop]], [[subset]]
