@@ -248,4 +248,204 @@ when(col("status") == "active",
 .otherwise("Inactive")
 ```
 
+## Joins in PySpark
+
+**Purpose:** Combine two DataFrames based on a condition
+
+**Syntax:**
+```python
+df1.join(df2, condition, how="join_type")
+df1.join(df2, df1["col"] == df2["col"], how="join_type")
+```
+
+---
+
+## Join Types
+
+### 1. Inner Join (default)
+**Returns:** Only matching rows from both DataFrames
+```python
+df1.join(df2, df1["id"] == df2["id"], how="inner")
+# OR
+df1.join(df2, "id")  # If column name is same
+```
+
+**SQL:** `INNER JOIN`
+
+---
+
+### 2. Left Join (Left Outer)
+**Returns:** All rows from left + matching from right (nulls for non-matches)
+```python
+df1.join(df2, df1["id"] == df2["id"], how="left")
+# OR
+df1.join(df2, "id", how="left")
+```
+
+**SQL:** `LEFT JOIN` or `LEFT OUTER JOIN`
+
+**Use when:** Don't want to lose left table data
+
+---
+
+### 3. Right Join (Right Outer)
+**Returns:** All rows from right + matching from left (nulls for non-matches)
+```python
+df1.join(df2, df1["id"] == df2["id"], how="right")
+```
+
+**SQL:** `RIGHT JOIN` or `RIGHT OUTER JOIN`
+
+**Use when:** Don't want to lose right table data
+
+---
+
+### 4. Full Outer Join
+**Returns:** All rows from both (nulls where no match)
+```python
+df1.join(df2, df1["id"] == df2["id"], how="outer")
+# OR
+df1.join(df2, "id", how="full")
+```
+
+**SQL:** `FULL OUTER JOIN`
+
+**Use when:** Need complete data from both sides
+
+---
+
+### 5. Left Semi Join
+**Returns:** Rows from left that have match in right (like IN/EXISTS)
+```python
+df1.join(df2, df1["id"] == df2["id"], how="left_semi")
+```
+
+**SQL Equivalent:**
+```sql
+SELECT * FROM df1
+WHERE id IN (SELECT id FROM df2);
+```
+
+**Use when:** Filter left table based on right table existence
+
+---
+
+### 6. Left Anti Join ⭐
+**Returns:** Rows from left that DON'T have match in right (like NOT IN)
+```python
+df1.join(df2, df1["id"] == df2["id"], how="left_anti")
+```
+
+**SQL Equivalent:**
+```sql
+SELECT * FROM df1
+WHERE id NOT IN (SELECT id FROM df2);
+```
+
+**Use when:** Find unmatched records (e.g., users who haven't ordered)
+
+---
+
+### 7. Cross Join (Cartesian Product)
+**Returns:** Every row from left × every row from right
+```python
+df1.crossJoin(df2)
+# OR
+df1.join(df2, how="cross")
+```
+
+**SQL:** `CROSS JOIN`
+
+**Warning:** ⚠️ Expensive! Use with small DataFrames only
+
+---
+
+## Join Condition Patterns
+
+### Same column name
+```python
+df1.join(df2, "id")  # Simplest
+```
+
+### Different column names
+```python
+df1.join(df2, df1["user_id"] == df2["customer_id"])
+```
+
+### Multiple columns
+```python
+df1.join(df2, 
+    (df1["id"] == df2["id"]) & (df1["date"] == df2["date"])
+)
+```
+
+### List of columns (same names)
+```python
+df1.join(df2, ["id", "date"])
+```
+
+---
+
+## Handling Ambiguous Columns
+
+**Problem:** Both DataFrames have same column names
+```python
+# Both have "id" column
+df1.join(df2, "id")  # ❌ Ambiguous column error!
+```
+
+**Solutions:**
+
+### 1. Specify DataFrame
+```python
+result = df1.join(df2, df1["id"] == df2["id"])
+result.select(df1["id"], df1["name"], df2["sales"])
+```
+
+### 2. Rename before join
+```python
+df2 = df2.withColumnRenamed("id", "customer_id")
+df1.join(df2, df1["id"] == df2["customer_id"])
+```
+
+### 3. Drop duplicate column after join
+```python
+result = df1.join(df2, "id").drop(df2["id"])
+```
+
+---
+
+## Performance Tips
+
+### ✅ Best Practices:
+```python
+# 1. Broadcast small tables (< 10MB)
+from pyspark.sql.functions import broadcast
+large_df.join(broadcast(small_df), "id")
+
+# 2. Filter before join
+df1.filter(col("status") == "active").join(df2, "id")
+
+# 3. Select only needed columns before join
+df1.select("id", "name").join(df2.select("id", "sales"), "id")
+```
+
+### ⚠️ Avoid:
+- Cross joins on large DataFrames
+- Joins without filters on huge tables
+- Multiple sequential joins without caching
+
+---
+
+## Quick Reference Table
+
+| Join Type | Returns | Use Case |
+|-----------|---------|----------|
+| `inner` | Matches only | Standard join |
+| `left` | All left + matches | Keep all left records |
+| `right` | All right + matches | Keep all right records |
+| `outer`/`full` | All from both | Combine everything |
+| `left_semi` | Left with matches | Filter left by right |
+| `left_anti` | Left without matches | Find missing records |
+| `cross` | Cartesian product | Combinations |
 
