@@ -63,8 +63,6 @@ df1.unionByName(df2)    # ✅ Correctly aligned by name
 - Use `allowMissingColumns=True` for different schemas
 - Preferred in production code
 
-**Related:** [[union]], [[join]], [[concat]]
-
 ## String Functions
 
 **Purpose:** Transform and manipulate string/text columns
@@ -121,7 +119,7 @@ TRIM(text)
 REGEXP_REPLACE(text, 'old', 'new')
 ```
 
-**Related:** [[col]], [[withColumn]], [[regexp_replace]], [[split]]
+
 
 ## Date Functions
 
@@ -377,4 +375,58 @@ LATERAL VIEW EXPLODE(books) AS book;
 - `explode()` creates new rows from array
 - Use `explode()` to normalize nested data
 
-**Related:** [[split]], [[array_contains]], [[collect_list]]
+## array_contains()
+
+**Purpose:** Checks if an array column contains a specific value (returns boolean)
+
+**Syntax:**
+```python
+array_contains(col("array_column"), "value")
+```
+
+**Examples:**
+```python
+# Check if array contains "Type1"
+df.withColumn("has_type1", array_contains(col("outlet_type_array"), "Type1"))
+
+# Filter rows where array contains value
+df.filter(array_contains(col("tags"), "premium"))
+
+# Create flag based on array content
+df.withColumn("is_featured", 
+    array_contains(col("categories"), "featured"))
+```
+
+**Complete Example:**
+```python
+# Split outlet type, then check if it contains "Supermarket"
+df = df.withColumn("type_array", split(col("outlet_type"), " "))
+df = df.withColumn("is_supermarket", 
+    array_contains(col("type_array"), "Supermarket"))
+
+# "Supermarket Type1" → ["Supermarket", "Type1"] → True
+# "Grocery Store" → ["Grocery", "Store"] → False
+```
+
+**SQL Equivalent:**
+```sql
+-- Some SQL dialects (not standard)
+ARRAY_CONTAINS(tags, 'premium')
+
+-- Standard SQL alternative with JSON
+JSON_CONTAINS(tags, '"premium"')
+```
+
+**Key Points:**
+- Returns `True` or `False` (boolean)
+- Works only on array columns
+- Case-sensitive matching
+- Useful for filtering and creating flags
+
+**Common Pattern:**
+```python
+# Split, check, filter
+df.withColumn("items", split(col("items_str"), ",")) \
+  .filter(array_contains(col("items"), "apple"))
+```
+
