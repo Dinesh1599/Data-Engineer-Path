@@ -280,4 +280,101 @@ df = df.dropna(subset=["user_id"])  # Must have user_id
 df = df.fillna({"age": 0, "city": "Unknown"})  # Fill optional fields
 ```
 
-## d
+## split()
+
+**Purpose:** Splits a string column into an array based on delimiter
+
+**Syntax:**
+```python
+split(col("column"), "delimiter")
+```
+
+**Examples:**
+```python
+# Split by space
+df.withColumn("words", split(col("sentence"), " "))
+
+# Split CSV values
+df.withColumn("items_array", split(col("items"), ","))
+
+# Example data transformation:
+# "apple,banana,orange" → ["apple", "banana", "orange"]
+```
+
+---
+
+## Indexing (Array Access)
+
+**Purpose:** Access specific element from array column
+
+**Syntax:**
+```python
+col("array_column")[index]  # 0-based indexing
+col("array_column").getItem(index)  # Alternative syntax
+```
+
+**Examples:**
+```python
+# Split and get first element
+df.withColumn("items_array", split(col("outlet_type"), " "))
+df.withColumn("first_word", col("items_array")[0])
+
+# "Supermarket Type1" → ["Supermarket", "Type1"] → "Supermarket"
+
+# Get second element
+df.withColumn("second_word", col("items_array")[1])  # "Type1"
+```
+
+---
+
+## explode()
+
+**Purpose:** Converts array column into multiple rows (one row per array element)
+
+**Syntax:**
+```python
+explode(col("array_column"))
+```
+
+**Examples:**
+```python
+# Before explode:
+# [user_id, books]
+# [1, ["book1", "book2", "book3"]]
+
+df.withColumn("book", explode(col("books")))
+
+# After explode:
+# [user_id, books, book]
+# [1, ["book1", "book2", "book3"], "book1"]
+# [1, ["book1", "book2", "book3"], "book2"]
+# [1, ["book1", "book2", "book3"], "book3"]
+```
+
+**Complete Example:**
+```python
+# Split, then explode
+df = df.withColumn("items_array", split(col("items"), ","))
+df = df.withColumn("item", explode(col("items_array")))
+
+# "apple,banana,orange" → 3 separate rows with apple, banana, orange
+```
+
+**SQL Equivalent:**
+```sql
+-- Split (varies by SQL dialect)
+SPLIT(text, ',')
+
+-- Explode (not standard SQL, but exists in some dialects)
+SELECT user_id, book
+FROM table
+LATERAL VIEW EXPLODE(books) AS book;
+```
+
+**Key Points:**
+- `split()` creates array column
+- Indexing `[0]`, `[1]` accesses array elements
+- `explode()` creates new rows from array
+- Use `explode()` to normalize nested data
+
+**Related:** [[split]], [[array_contains]], [[collect_list]]
