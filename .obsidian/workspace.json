@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pyspark/PySpark Transformations - Intermediate.md",
+                "file": "Pyspark/PySpark Transformations - Advanced.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PySpark Transformations - Intermediate"
+              "title": "PySpark Transformations - Advanced"
             }
           }
         ],
@@ -196,9 +196,9 @@
   },
   "active": "9705304cd73658aa",
   "lastOpenFiles": [
+    "Pyspark/PySpark Transformations - Intermediate.md",
     "Pyspark/Pyspark.md",
     "Pyspark/PySpark Transformations - Advanced.md",
-    "Pyspark/PySpark Transformations - Intermediate.md",
     "Pyspark/PySpark Transformations - Beginner.md",
     "Pyspark/Tips to Remember.md",
     "Pyspark/Reading a file in PySpark.md",
