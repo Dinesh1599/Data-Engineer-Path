@@ -430,3 +430,67 @@ df.withColumn("items", split(col("items_str"), ",")) \
   .filter(array_contains(col("items"), "apple"))
 ```
 
+
+## groupBy()
+
+**Purpose:** Groups rows by one or more columns for aggregation
+
+**Syntax:**
+```python
+df.groupBy("column")
+df.groupBy("col1", "col2")  # Multiple columns
+df.groupBy(col("column"))   # Using col() object
+```
+
+**Examples:**
+```python
+# Group by single column
+df.groupBy("item_type").count()
+
+# Group by multiple columns
+df.groupBy("item_type", "outlet_size").sum("item_mrp")
+
+# Using agg() for multiple aggregations
+df.groupBy("category").agg(
+    sum("sales").alias("total_sales"),
+    avg("price").alias("avg_price"),
+    count("*").alias("count")
+)
+```
+
+**Common Aggregation Functions:**
+```python
+.count()           # Count rows
+.sum("column")     # Sum values
+.avg("column")     # Average
+.max("column")     # Maximum
+.min("column")     # Minimum
+.mean("column")    # Mean (same as avg)
+```
+
+**SQL Equivalent:**
+```sql
+SELECT item_type, SUM(item_mrp)
+FROM table
+GROUP BY item_type;
+
+-- Multiple columns
+SELECT item_type, outlet_size, SUM(item_mrp)
+FROM table
+GROUP BY item_type, outlet_size;
+```
+
+**Key Points:**
+- **Must follow with aggregation function**
+- Column order matters for multi-column grouping
+- Returns grouped data object (not DataFrame until aggregation)
+- Use `.agg()` for multiple aggregations
+
+**Common Pattern:**
+```python
+# Group and aggregate with alias
+df.groupBy("region") \
+  .agg(sum("sales").alias("total_sales")) \
+  .orderBy("total_sales", ascending=False)
+```
+
