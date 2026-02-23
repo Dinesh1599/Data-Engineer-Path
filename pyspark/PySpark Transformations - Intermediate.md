@@ -466,6 +466,9 @@ df.groupBy("category").agg(
 .max("column")     # Maximum
 .min("column")     # Minimum
 .mean("column")    # Mean (same as avg)
+.agg()
+	collect_list() # Collects data into a single array
+	collect_set()  # Same thing as collect_list but collects unique                       values
 ```
 
 **SQL Equivalent:**

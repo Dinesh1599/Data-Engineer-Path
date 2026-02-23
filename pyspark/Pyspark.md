@@ -12,5 +12,6 @@ Topics:
 [[DDL and StructType  in PySpark]]
 [[PySpark Transformations - Beginner]]
 [[PySpark Transformations - Intermediate]]
+[[PySpark Transformations - Advanced]]
 [[Tips to Remember]]
 

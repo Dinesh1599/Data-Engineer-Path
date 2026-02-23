@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pyspark/PySpark Transformations - Intermediate.md",
+                "file": "Pyspark/Pyspark.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PySpark Transformations - Intermediate"
+              "title": "Pyspark"
             }
           },
           {
@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pyspark/PySpark Transformations - Beginner.md",
-                "mode": "preview",
+                "file": "Pyspark/PySpark Transformations - Intermediate.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PySpark Transformations - Beginner"
+              "title": "PySpark Transformations - Intermediate"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -193,14 +194,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "41b6f0283ab3edd7",
+  "active": "9705304cd73658aa",
   "lastOpenFiles": [
-    "Pyspark/PySpark Transformations - Beginner.md",
-    "Pyspark/PySpark Transformations - Intermediate.md",
-    "Pyspark/Reading a file in PySpark.md",
     "Pyspark/Pyspark.md",
-    "SQL/SQL Execution Order.md",
+    "Pyspark/PySpark Transformations - Advanced.md",
+    "Pyspark/PySpark Transformations - Intermediate.md",
+    "Pyspark/PySpark Transformations - Beginner.md",
     "Pyspark/Tips to Remember.md",
+    "Pyspark/Reading a file in PySpark.md",
+    "SQL/SQL Execution Order.md",
     "Database Management Concepts/Performance Tips.md",
     "Pyspark/DDL and StructType  in PySpark.md",
     "Pyspark/Go to Pyspark commands.md",
@@ -222,7 +224,6 @@
     "Data Modeling/Data Modeling.md",
     "Data Modeling/OLTP vs OLAP.md",
     "Data Modeling/Normalization.md",
-    "Data Modeling/Data modeling Techniques.md",
     "dbt",
     "Untitled.canvas",
     "images/Screenshot 2026-01-27 at 10.17.36 AM.png",
