@@ -248,7 +248,7 @@ when(col("status") == "active",
 .otherwise("Inactive")
 ```
 
-## Joins in PySpark
+## Joins 
 
 **Purpose:** Combine two DataFrames based on a condition
 
@@ -260,7 +260,7 @@ df1.join(df2, df1["col"] == df2["col"], how="join_type")
 
 ---
 
-## Join Types
+### Join Types
 
 ### 1. Inner Join (default)
 **Returns:** Only matching rows from both DataFrames
@@ -360,7 +360,7 @@ df1.join(df2, how="cross")
 
 ---
 
-## Join Condition Patterns
+### Join Condition Patterns
 
 ### Same column name
 ```python
@@ -386,7 +386,7 @@ df1.join(df2, ["id", "date"])
 
 ---
 
-## Handling Ambiguous Columns
+### Handling Ambiguous Columns
 
 **Problem:** Both DataFrames have same column names
 ```python
@@ -413,9 +413,16 @@ df1.join(df2, df1["id"] == df2["customer_id"])
 result = df1.join(df2, "id").drop(df2["id"])
 ```
 
+### 4. Use Alias
+```python
+result = df1.alias('a').join(df2.alias('b'),df1["id"]==df2["id"],"inner")\
+	.select(col("a.id"))
+```
+
+
 ---
 
-## Performance Tips
+### Performance Tips
 
 ### ✅ Best Practices:
 ```python
@@ -437,7 +444,7 @@ df1.select("id", "name").join(df2.select("id", "sales"), "id")
 
 ---
 
-## Quick Reference Table
+### Quick Reference Table
 
 | Join Type | Returns | Use Case |
 |-----------|---------|----------|
@@ -449,3 +456,265 @@ df1.select("id", "name").join(df2.select("id", "sales"), "id")
 | `left_anti` | Left without matches | Find missing records |
 | `cross` | Cartesian product | Combinations |
 
+## Window Functions in PySpark
+
+**Purpose:** Perform calculations across a set of rows related to the current row
+
+**Setup:**
+```python
+from pyspark.sql.window import Window
+from pyspark.sql.functions import *
+```
+
+---
+
+### Core Window Functions
+
+#### 1. row_number()
+**Returns:** Unique sequential number (1, 2, 3...) for each row in partition
+```python
+window = Window.partitionBy("category").orderBy("sales")
+df.withColumn("row_num", row_number().over(window))
+```
+
+**Use case:** Remove duplicates, assign unique IDs
+
+---
+
+#### 2. rank()
+**Returns:** Rank with gaps (1, 1, 3, 4...)
+```python
+window = Window.orderBy(col("score").desc())
+df.withColumn("rank", rank().over(window))
+```
+
+**Behavior:** Same values = same rank, next rank skips
+- Scores: [100, 95, 95, 90] → Ranks: [1, 2, 2, 4]
+
+---
+
+#### 3. dense_rank()
+**Returns:** Rank without gaps (1, 1, 2, 3...)
+```python
+window = Window.orderBy(col("score").desc())
+df.withColumn("dense_rank", dense_rank().over(window))
+```
+
+**Behavior:** Same values = same rank, next rank continues
+- Scores: [100, 95, 95, 90] → Ranks: [1, 2, 2, 3]
+
+---
+
+#### 4. ntile(n)
+**Returns:** Divides rows into n buckets (1 to n)
+```python
+window = Window.orderBy("salary")
+df.withColumn("quartile", ntile(4).over(window))
+```
+
+**Use case:** Split data into equal groups (quartiles, percentiles)
+
+---
+
+### Aggregate Functions as Window Functions
+
+#### 5. sum() / avg() / min() / max() / count()
+
+**Running Total (Cumulative Sum):**
+```python
+window = Window.partitionBy("user_id") \
+              .orderBy("date") \
+              .rowsBetween(Window.unboundedPreceding, Window.currentRow)
+
+df.withColumn("cumulative_sum", sum("amount").over(window))
+```
+
+**Moving Average (Last 7 days):**
+```python
+window = Window.partitionBy("product") \
+              .orderBy("date") \
+              .rowsBetween(-6, 0)  # Last 7 rows including current
+
+df.withColumn("moving_avg", avg("sales").over(window))
+```
+
+---
+
+### Offset Functions
+
+#### 6. lag()
+**Returns:** Value from previous row
+```python
+window = Window.partitionBy("user_id").orderBy("date")
+df.withColumn("prev_value", lag("amount", 1).over(window))
+# offset=1 means 1 row back, default is 1
+```
+
+**Use case:** Compare with previous value, calculate changes
+
+---
+
+#### 7. lead()
+**Returns:** Value from next row
+```python
+window = Window.partitionBy("user_id").orderBy("date")
+df.withColumn("next_value", lead("amount", 1).over(window))
+```
+
+**Use case:** Look ahead in time series
+
+---
+
+#### 8. first() / last()
+**Returns:** First/last value in window frame
+```python
+window = Window.partitionBy("category").orderBy("date")
+df.withColumn("first_sale", first("sales").over(window))
+df.withColumn("last_sale", last("sales").over(window))
+```
+
+---
+
+### Window Specification Components
+
+#### partitionBy()
+**Purpose:** Divide data into groups (like GROUP BY)
+```python
+Window.partitionBy("department")
+Window.partitionBy("dept", "region")  # Multiple columns
+```
+
+---
+
+#### orderBy()
+**Purpose:** Define order within partition
+```python
+Window.orderBy("date")
+Window.orderBy(col("sales").desc())
+Window.orderBy("date", col("sales").desc())  # Multiple columns
+```
+
+---
+
+### Frame Specifications
+
+#### rowsBetween()
+**Purpose:** Define row range for calculation
+```python
+# All rows from start to current
+Window.rowsBetween(Window.unboundedPreceding, Window.currentRow)
+
+# Last 3 rows including current
+Window.rowsBetween(-2, 0)
+
+# Current row + next 2 rows
+Window.rowsBetween(0, 2)
+
+# All rows in partition
+Window.rowsBetween(Window.unboundedPreceding, Window.unboundedFollowing)
+```
+
+#### rangeBetween()
+**Purpose:** Define value range (for numeric/date columns)
+```python
+# All rows within 7 days before current row
+Window.orderBy("date").rangeBetween(-7, 0)
+```
+
+---
+
+### Common Patterns
+
+#### Remove Duplicates (Keep First)
+```python
+window = Window.partitionBy("user_id").orderBy("timestamp")
+df.withColumn("rn", row_number().over(window)) \
+  .filter(col("rn") == 1) \
+  .drop("rn")
+```
+
+#### Top N per Group
+```python
+window = Window.partitionBy("category").orderBy(col("sales").desc())
+df.withColumn("rank", row_number().over(window)) \
+  .filter(col("rank") <= 3)  # Top 3 per category
+```
+
+#### Running Total
+```python
+window = Window.partitionBy("user_id") \
+              .orderBy("date") \
+              .rowsBetween(Window.unboundedPreceding, Window.currentRow)
+
+df.withColumn("running_total", sum("amount").over(window))
+```
+
+#### Calculate Change from Previous
+```python
+window = Window.partitionBy("product").orderBy("date")
+df.withColumn("prev_price", lag("price").over(window)) \
+  .withColumn("price_change", col("price") - col("prev_price"))
+```
+
+#### Moving Average (7-day)
+```python
+window = Window.partitionBy("product") \
+              .orderBy("date") \
+              .rowsBetween(-6, 0)
+
+df.withColumn("moving_avg_7d", avg("sales").over(window))
+```
+
+#### Percent of Total
+```python
+window = Window.partitionBy("category")
+df.withColumn("category_total", sum("sales").over(window)) \
+  .withColumn("percent_of_total", 
+      (col("sales") / col("category_total")) * 100)
+```
+
+---
+
+### SQL Equivalent
+```sql
+-- PySpark
+window = Window.partitionBy("dept").orderBy("salary")
+df.withColumn("rank", rank().over(window))
+
+-- SQL
+SELECT *, 
+  RANK() OVER (PARTITION BY dept ORDER BY salary) as rank
+FROM table;
+```
+
+---
+
+### Performance Tips
+
+#### ✅ Best Practices:
+- Always use `orderBy()` with ranking functions
+- Partition on columns with reasonable cardinality
+- Cache DataFrame if using multiple window functions
+- Use specific frame bounds when possible
+
+#### ⚠️ Avoid:
+- Window without `partitionBy()` on huge datasets (global sort)
+- Multiple different windows - combine when possible
+- Unbounded frames with large partitions
+
+---
+
+### Quick Reference
+
+| Function       | Returns        | Common Use            |
+| -------------- | -------------- | --------------------- |
+| `row_number()` | 1,2,3,4        | Unique ID, dedupe     |
+| `rank()`       | 1,2,2,4        | Rankings with gaps    |
+| `dense_rank()` | 1,2,2,3        | Rankings without gaps |
+| `ntile(n)`     | 1,2,3,4        | Buckets/quartiles     |
+| `lag()`        | Previous value | Change calculation    |
+| `lead()`       | Next value     | Look ahead            |
+| `sum().over()` | Running total  | Cumulative sum        |
+| `avg().over()` | Moving average | Smoothing             |
+
+**Related:** [[partitionBy]], [[orderBy]], [[rowsBetween]], [[rank]], [[row_number]]
