@@ -98,6 +98,26 @@ Or just wander through it when you forget how something works (which will happen
 
 ---
 
+## Work in Progress
+
+Some sections of this repository are incomplete or missing.
+
+This is intentional.
+
+This repo grows alongside my journey as a Data Engineer. Some topics are fully fleshed out, others are still being written, and some exist only as placeholders waiting for deeper exploration.
+
+I prefer adding notes when I truly understand something — not just copying documentation.
+
+If you see gaps, it means I’m either:
+
+- Currently learning it  
+- Actively working on it  
+- Or waiting until I can explain it properly  
+
+This is a living system, not a finished product.
+
+---
+
 ## Final note
 
 This repo will never be "complete."
