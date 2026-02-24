@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Apache Airflow/Core Components of Airflow.md",
+                "file": "Apache Airflow/Core Components and Architecture of Airflow.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Core Components of Airflow"
+              "title": "Core Components and Architecture of Airflow"
             }
           },
           {
@@ -197,7 +197,7 @@
   "lastOpenFiles": [
     "README.md",
     "images/Airflow Architecture.png",
-    "Apache Airflow/Core Components of Airflow.md",
+    "Apache Airflow/Core Components and Architecture of Airflow.md",
     "Apache Airflow/Airflow.md",
     "Spark/Spark Architecture.md",
     "Spark/Why we use Spark?.md",

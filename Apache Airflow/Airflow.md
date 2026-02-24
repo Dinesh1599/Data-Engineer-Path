@@ -11,4 +11,4 @@
 - State management gets more complex.
 - Tasks in Airflow can run in parallel
 
-[[Core Components of Airflow]]
+[[Core Components and Architecture of Airflow]]
