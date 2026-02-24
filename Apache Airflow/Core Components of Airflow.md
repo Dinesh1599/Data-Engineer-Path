@@ -46,6 +46,7 @@ Responsibility:
 
 - Receives tasks from Scheduler
 - Sends tasks to Workers
+- Decides **how and where** the task has to run
 
 Think:
 
