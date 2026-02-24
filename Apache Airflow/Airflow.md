@@ -10,3 +10,5 @@
 ![[Screenshot 2026-02-24 at 10.55.38 AM.png]]
 - State management gets more complex.
 - Tasks in Airflow can run in parallel
+
+[[Core Components of Airflow]]
