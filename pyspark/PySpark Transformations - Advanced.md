@@ -716,5 +716,3 @@ FROM table;
 | `lead()`       | Next value     | Look ahead            |
 | `sum().over()` | Running total  | Cumulative sum        |
 | `avg().over()` | Moving average | Smoothing             |
-
-**Related:** [[partitionBy]], [[orderBy]], [[rowsBetween]], [[rank]], [[row_number]]
