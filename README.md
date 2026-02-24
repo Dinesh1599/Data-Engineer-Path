@@ -23,7 +23,7 @@ This is where all of that lives.
 
 ## Important: This repo is built for Obsidian
 
-This repository is designed to be opened using **Obsidian**.
+This repository is designed to be opened using [Obsidian](https://obsidian.md/).
 
 Obsidian turns this from a folder of notes into a **connected knowledge system**.
 
