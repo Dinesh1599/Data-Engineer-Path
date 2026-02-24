@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spark/Spark Architecture.md",
+                "file": "Apache Airflow/Core Components of Airflow.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Spark Architecture"
+              "title": "Core Components of Airflow"
             }
           },
           {
@@ -195,9 +195,12 @@
   },
   "active": "41b6f0283ab3edd7",
   "lastOpenFiles": [
-    "Spark/Why we use Spark?.md",
+    "images/Airflow Architecture.png",
+    "Apache Airflow/Core Components of Airflow.md",
     "Apache Airflow/Airflow.md",
-    "Screenshot 2026-02-24 at 10.55.38 AM.png",
+    "Spark/Spark Architecture.md",
+    "Spark/Why we use Spark?.md",
+    "images/Screenshot 2026-02-24 at 10.55.38 AM.png",
     "Pyspark/PySpark Transformations - Advanced.md",
     "Apache Airflow",
     "Pyspark/PySpark Transformations - Intermediate.md",
@@ -212,7 +215,6 @@
     "Untitled.base",
     "Data warehouse/Good reference.png",
     "Spark/Apache Spark.md",
-    "Spark/Spark Architecture.md",
     "Data warehouse/Snowflake/Clustering.md",
     "withColumn.md",
     "Data warehouse/Snowflake/Secure Data Sharing.md",
@@ -223,8 +225,6 @@
     "Data warehouse/Snowflake/Security Privileges.md",
     "Data warehouse/Snowflake/Secure View.md",
     "Data warehouse/Snowflake/Search Optimization Service.md",
-    "Data Modeling/Questions to think about when creating a Data model.md",
-    "Data Modeling/Data Modeling.md",
     "dbt",
     "Untitled.canvas",
     "images/Screenshot 2026-01-27 at 10.17.36 AM.png",
@@ -244,7 +244,6 @@
     "EDA/EDA Flow.canvas",
     "EDA/Data Engineering Process.canvas",
     "images/Pasted image 20250814032054.png",
-    "images/Pasted image 20251217220309.png",
     "Untitled 1.canvas"
   ]
 }
