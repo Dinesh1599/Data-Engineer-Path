@@ -12,3 +12,4 @@
 - Tasks in Airflow can run in parallel
 
 [[Core Components and Architecture of Airflow]]
+[[Core Concepts of Airflow]]

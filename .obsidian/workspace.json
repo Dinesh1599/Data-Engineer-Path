@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Apache Airflow/Core Components and Architecture of Airflow.md",
+                "file": "Core Concepts of Airflow.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Core Components and Architecture of Airflow"
+              "title": "Core Concepts of Airflow"
             }
           },
           {
@@ -195,10 +195,11 @@
   },
   "active": "41b6f0283ab3edd7",
   "lastOpenFiles": [
+    "Apache Airflow/Airflow.md",
+    "Core Concepts of Airflow.md",
+    "Apache Airflow/Core Components and Architecture of Airflow.md",
     "README.md",
     "images/Airflow Architecture.png",
-    "Apache Airflow/Core Components and Architecture of Airflow.md",
-    "Apache Airflow/Airflow.md",
     "Spark/Spark Architecture.md",
     "Spark/Why we use Spark?.md",
     "images/Screenshot 2026-02-24 at 10.55.38 AM.png",
@@ -225,7 +226,6 @@
     "Data warehouse/Snowflake/Semi-structured data.md",
     "Data warehouse/Snowflake/Security Privileges.md",
     "Data warehouse/Snowflake/Secure View.md",
-    "Data warehouse/Snowflake/Search Optimization Service.md",
     "dbt",
     "Untitled.canvas",
     "images/Screenshot 2026-01-27 at 10.17.36 AM.png",
