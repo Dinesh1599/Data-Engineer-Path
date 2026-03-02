@@ -13,24 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spark/Spark Architecture.md",
-                "mode": "preview",
+                "file": "EDA/EDA.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Spark Architecture"
+              "title": "EDA"
             }
           },
           {
             "id": "feaac9c4945e6a6d",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.12.4"
+                "file": "Core Concepts of Airflow.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.12.4"
+              "icon": "lucide-file",
+              "title": "Core Concepts of Airflow"
             }
           },
           {
@@ -47,8 +49,7 @@
               "title": "PySpark Transformations - Intermediate"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -206,20 +207,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "feaac9c4945e6a6d",
+  "active": "41b6f0283ab3edd7",
   "lastOpenFiles": [
-    "Spark/Apache Spark.md",
+    "EDA/Data Engineering Process.canvas",
+    "Spark/Spark Architecture.md",
+    "Pyspark/PySpark Transformations - Intermediate.md",
     "Core Concepts of Airflow.md",
+    "Untitled.canvas",
+    "EDA/EDA Flow.canvas",
+    "EDA/EDA.md",
+    "Spark/Apache Spark.md",
     "Apache Airflow/Airflow.md",
     "Apache Airflow/Core Components and Architecture of Airflow.md",
     "README.md",
     "images/Airflow Architecture.png",
-    "Spark/Spark Architecture.md",
     "Spark/Why we use Spark?.md",
     "images/Screenshot 2026-02-24 at 10.55.38 AM.png",
     "Pyspark/PySpark Transformations - Advanced.md",
     "Apache Airflow",
-    "Pyspark/PySpark Transformations - Intermediate.md",
     "Pyspark/Pyspark.md",
     "Pyspark/Tips to Remember.md",
     "Pyspark/PySpark Transformations - Beginner.md",
@@ -237,10 +242,7 @@
     "Data warehouse/Snowflake/Data Sampling.md",
     "Data warehouse/Snowflake/Virtual Warehouse States.md",
     "Data warehouse/Snowflake/Semi-structured data.md",
-    "Data warehouse/Snowflake/Security Privileges.md",
-    "Data warehouse/Snowflake/Secure View.md",
     "dbt",
-    "Untitled.canvas",
     "images/Screenshot 2026-01-27 at 10.17.36 AM.png",
     "SQL_New",
     "Data warehouse/Databricks",
@@ -255,8 +257,6 @@
     "Misc",
     "Kafka",
     "Data Pipeline",
-    "EDA/EDA Flow.canvas",
-    "EDA/Data Engineering Process.canvas",
     "images/Pasted image 20250814032054.png",
     "Untitled 1.canvas"
   ]
