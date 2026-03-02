@@ -2,7 +2,7 @@
 
 #kafka #kafka-connect #connectors #integration #ETL
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

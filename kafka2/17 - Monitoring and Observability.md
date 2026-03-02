@@ -2,7 +2,7 @@
 
 #kafka #monitoring #observability #consumer-lag #metrics #JMX
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

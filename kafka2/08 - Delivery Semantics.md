@@ -2,7 +2,7 @@
 
 #kafka #delivery #guarantees #exactly-once #idempotent
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

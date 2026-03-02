@@ -2,7 +2,7 @@
 
 #kafka #idempotent #exactly-once #duplicates #reliability
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

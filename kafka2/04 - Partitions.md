@@ -2,7 +2,7 @@
 
 #kafka #partitions #scalability #parallelism #ordering
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

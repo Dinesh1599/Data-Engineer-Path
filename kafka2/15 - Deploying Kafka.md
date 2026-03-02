@@ -2,7 +2,7 @@
 
 #kafka #deployment #docker #kubernetes #cloud
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

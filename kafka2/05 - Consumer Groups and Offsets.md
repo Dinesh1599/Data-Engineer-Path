@@ -2,7 +2,7 @@
 
 #kafka #consumer-groups #offsets #coordination
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

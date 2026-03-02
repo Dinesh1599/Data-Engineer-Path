@@ -2,7 +2,7 @@
 
 #kafka #DLQ #dead-letter #error-handling #poison-pill
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

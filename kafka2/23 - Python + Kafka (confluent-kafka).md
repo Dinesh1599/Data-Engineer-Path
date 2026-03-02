@@ -2,7 +2,7 @@
 
 #kafka #python #confluent-kafka #code #hands-on
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

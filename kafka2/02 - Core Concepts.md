@@ -2,7 +2,7 @@
 
 #kafka #fundamentals #events #topics #producers #consumers
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

@@ -2,7 +2,7 @@
 
 #kafka #producers #batching #compression #acks #callbacks
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

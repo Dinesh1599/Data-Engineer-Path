@@ -2,7 +2,7 @@
 
 #kafka #brokers #clusters #infrastructure
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

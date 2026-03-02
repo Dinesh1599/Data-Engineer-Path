@@ -2,7 +2,7 @@
 
 #kafka #kraft #zookeeper #metadata #cluster-coordination
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

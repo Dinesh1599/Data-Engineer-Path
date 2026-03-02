@@ -2,7 +2,7 @@
 
 #kafka #motivation #microservices #distributed-systems
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

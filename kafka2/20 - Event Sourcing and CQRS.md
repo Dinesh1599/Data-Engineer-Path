@@ -2,7 +2,7 @@
 
 #kafka #event-sourcing #CQRS #architecture #design-patterns
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

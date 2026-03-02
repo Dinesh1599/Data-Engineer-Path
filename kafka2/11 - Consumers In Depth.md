@@ -2,7 +2,7 @@
 
 #kafka #consumers #polling #rebalancing #offset-management
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

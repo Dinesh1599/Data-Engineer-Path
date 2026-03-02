@@ -2,7 +2,7 @@
 
 #kafka #topic-design #naming #architecture #best-practices
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

@@ -2,7 +2,7 @@
 
 #kafka #kafka-streams #stream-processing #real-time
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

@@ -2,7 +2,7 @@
 
 #kafka #security #TLS #SASL #ACL #authentication #authorisation
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

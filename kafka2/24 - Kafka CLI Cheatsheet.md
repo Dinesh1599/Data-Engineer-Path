@@ -2,7 +2,7 @@
 
 #kafka #CLI #commands #cheatsheet #debugging
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 
@@ -238,4 +238,4 @@ kafka-log-dirs.sh \
 
 ---
 
-← [[23 - Python + Kafka (confluent-kafka)]] | [[Kafka MOC]] →
+← [[23 - Python + Kafka (confluent-kafka)]] | [[kafka2/Kafka]] →

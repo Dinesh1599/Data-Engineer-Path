@@ -2,7 +2,7 @@
 
 #kafka #retention #storage #log-compaction
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

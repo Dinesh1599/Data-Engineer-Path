@@ -13,40 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "EDA/EDA.md",
-                "mode": "source",
+                "file": "kafka2/02 - Core Concepts.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EDA"
-            }
-          },
-          {
-            "id": "feaac9c4945e6a6d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Core Concepts of Airflow.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Core Concepts of Airflow"
-            }
-          },
-          {
-            "id": "9705304cd73658aa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Pyspark/PySpark Transformations - Intermediate.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PySpark Transformations - Intermediate"
+              "title": "02 - Core Concepts"
             }
           }
         ]
@@ -81,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dbt",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -209,13 +181,23 @@
   },
   "active": "41b6f0283ab3edd7",
   "lastOpenFiles": [
-    "EDA/Data Engineering Process.canvas",
-    "Spark/Spark Architecture.md",
+    "kafka2/Kafka.md",
+    "kafka2/02 - Core Concepts.md",
+    "kafka2/05 - Consumer Groups and Offsets.md",
+    "kafka2/01 - Why Kafka Exists.md",
+    "Kafka/Consumer Groups.md",
+    "kafka2/23 - Python + Kafka (confluent-kafka).md",
+    "kafka2/24 - Kafka CLI Cheatsheet.md",
+    "kafka2/03 - Brokers and Clusters.md",
+    "kafka2/04 - Partitions.md",
+    "kafka2/06 - KRaft Mode.md",
     "Pyspark/PySpark Transformations - Intermediate.md",
     "Core Concepts of Airflow.md",
+    "EDA/EDA.md",
+    "EDA/Data Engineering Process.canvas",
+    "Spark/Spark Architecture.md",
     "Untitled.canvas",
     "EDA/EDA Flow.canvas",
-    "EDA/EDA.md",
     "Spark/Apache Spark.md",
     "Apache Airflow/Airflow.md",
     "Apache Airflow/Core Components and Architecture of Airflow.md",
@@ -231,17 +213,8 @@
     "Pyspark/Reading a file in PySpark.md",
     "SQL/SQL Execution Order.md",
     "Database Management Concepts/Performance Tips.md",
-    "Pyspark/DDL and StructType  in PySpark.md",
-    "Pyspark/Go to Pyspark commands.md",
     "Untitled.base",
     "Data warehouse/Good reference.png",
-    "Data warehouse/Snowflake/Clustering.md",
-    "withColumn.md",
-    "Data warehouse/Snowflake/Secure Data Sharing.md",
-    "Data warehouse/Snowflake/Snowflake.md",
-    "Data warehouse/Snowflake/Data Sampling.md",
-    "Data warehouse/Snowflake/Virtual Warehouse States.md",
-    "Data warehouse/Snowflake/Semi-structured data.md",
     "dbt",
     "images/Screenshot 2026-01-27 at 10.17.36 AM.png",
     "SQL_New",

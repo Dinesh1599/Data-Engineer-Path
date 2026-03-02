@@ -2,7 +2,7 @@
 
 #kafka #replication #fault-tolerance #ISR #reliability
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 

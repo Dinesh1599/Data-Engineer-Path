@@ -2,7 +2,7 @@
 
 #kafka #schema-registry #avro #serialisation #schema-evolution
 
-← [[Kafka MOC]]
+← [[kafka2/Kafka]]
 
 ---
 
