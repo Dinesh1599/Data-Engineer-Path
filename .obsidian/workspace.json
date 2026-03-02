@@ -13,12 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Core Concepts of Airflow.md",
+                "file": "Spark/Spark Architecture.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Core Concepts of Airflow"
+              "title": "Spark Architecture"
+            }
+          },
+          {
+            "id": "feaac9c4945e6a6d",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.4"
             }
           },
           {
@@ -35,7 +47,8 @@
               "title": "PySpark Transformations - Intermediate"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -193,10 +206,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "41b6f0283ab3edd7",
+  "active": "feaac9c4945e6a6d",
   "lastOpenFiles": [
-    "Apache Airflow/Airflow.md",
+    "Spark/Apache Spark.md",
     "Core Concepts of Airflow.md",
+    "Apache Airflow/Airflow.md",
     "Apache Airflow/Core Components and Architecture of Airflow.md",
     "README.md",
     "images/Airflow Architecture.png",
@@ -216,7 +230,6 @@
     "Pyspark/Go to Pyspark commands.md",
     "Untitled.base",
     "Data warehouse/Good reference.png",
-    "Spark/Apache Spark.md",
     "Data warehouse/Snowflake/Clustering.md",
     "withColumn.md",
     "Data warehouse/Snowflake/Secure Data Sharing.md",
