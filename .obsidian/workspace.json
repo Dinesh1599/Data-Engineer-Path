@@ -11,10 +11,14 @@
             "id": "41b6f0283ab3edd7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Langchain/packages used so far in langchain.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "packages used so far in langchain"
             }
           }
         ]
@@ -175,8 +179,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8bb36002b09ef60b",
+  "active": "41b6f0283ab3edd7",
   "lastOpenFiles": [
+    "Langchain/Langchain.md",
+    "Langchain/packages used so far in langchain.md",
+    "Langchain/ packages used so far in langchain.md",
+    "Functions",
+    "images/Pasted image 20251124213202.png",
+    "kafka2/Kafka.md",
+    "kafka2",
+    "New folder/Untitled.md",
+    "Langchain",
     "Kafka/Kafka.md",
     "Kafka/24 - Kafka CLI Cheatsheet.md",
     "Kafka/23 - Python + Kafka (confluent-kafka).md",
@@ -198,12 +211,7 @@
     "Kafka/07 - Replication and Fault Tolerance.md",
     "Kafka/06 - KRaft Mode.md",
     "Kafka/05 - Consumer Groups and Offsets.md",
-    "Kafka/04 - Partitions.md",
-    "Kafka/03 - Brokers and Clusters.md",
-    "Kafka/02 - Core Concepts.md",
-    "Kafka/01 - Why Kafka Exists.md",
     "Kafka",
-    "Kafka/Consumer Groups.md",
     "EDA/Data Engineering Process.canvas",
     "Untitled.canvas",
     "EDA/EDA Flow.canvas",
@@ -223,10 +231,6 @@
     "images/Screenshot 2026-01-17 at 4.18.29 AM.png",
     "images/Screenshot 2026-01-17 at 4.18.16 AM.png",
     "images/Screenshot 2026-01-05 at 12.53.09 AM.png",
-    "New folder",
-    "Misc",
-    "Data Pipeline",
-    "images/Pasted image 20250814032054.png",
     "Untitled 1.canvas"
   ]
 }

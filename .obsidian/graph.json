@@ -90,6 +90,13 @@
         "a": 1,
         "rgb": 12805439
       }
+    },
+    {
+      "query": "path:Langchain  ",
+      "color": {
+        "a": 1,
+        "rgb": 7344153
+      }
     }
   ],
   "collapse-display": true,
@@ -102,6 +109,6 @@
   "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 500,
-  "scale": 0.11229499948671892,
+  "scale": 0.08976228300222683,
   "close": true
 }
