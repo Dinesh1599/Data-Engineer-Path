@@ -2,7 +2,7 @@
 
 #kafka #performance #throughput #latency #tuning
 
-← [[kafka2/Kafka]]
+← [[Kafka]]
 
 ---
 
