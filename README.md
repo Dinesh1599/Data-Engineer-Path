@@ -65,7 +65,8 @@ Everything that makes a Data Engineer a Data Engineer:
 ### Modern Stack
 
 - dbt  
-- Docker  
+- Docker
+- Langchain
 
 ### And the real stuff
 
@@ -115,6 +116,10 @@ If you see gaps, it means I’m either:
 - Or waiting until I can explain it properly  
 
 This is a living system, not a finished product.
+
+---
+## New Update
+- Added notes for LangChain (March 2026)
 
 ---
 

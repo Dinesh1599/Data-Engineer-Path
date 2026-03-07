@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kafka/01 - Why Kafka Exists.md",
-                "mode": "preview",
+                "file": "Apache Airflow/Airflow.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Why Kafka Exists"
+              "title": "Airflow"
             }
           }
         ]
@@ -179,15 +179,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "41b6f0283ab3edd7",
+  "active": "8bb36002b09ef60b",
   "lastOpenFiles": [
+    "Core Concepts of Airflow.md",
+    "README.md",
+    "Langchain/01-Fundamentals.md",
+    "Langchain/00-Index.md",
+    "Langchain/Tips-and-Common-Doubts.md",
+    "Langchain/Packages-and-Classes.md",
+    "Kafka/01 - Why Kafka Exists.md",
     "Kafka/Kafka.md",
     "Kafka/18 - Performance Tuning.md",
     "kafka2/Kafka.md",
     "kafka2",
     "Python/Dictionaries.md",
     "Python/Functions.md",
-    "README.md",
     "Python/Control Flow.md",
     "Python/Error Handling.md",
     "Python/Lambda.md",
@@ -205,11 +211,6 @@
     "Kafka/21 - Dead Letter Queues.md",
     "Kafka/19 - Topic Design.md",
     "Kafka/20 - Event Sourcing and CQRS.md",
-    "Kafka/17 - Monitoring and Observability.md",
-    "Kafka/16 - Security.md",
-    "Kafka/15 - Deploying Kafka.md",
-    "Kafka/14 - Schema Registry and Avro.md",
-    "Kafka/13 - Kafka Streams.md",
     "Kafka",
     "EDA/Data Engineering Process.canvas",
     "Untitled.canvas",
