@@ -23,6 +23,7 @@ Read them in order. Each file links to the next. The concepts build on each othe
 | 10 | [[10-ReAct-Agents]] | What is ReAct, create_react_agent, streaming |
 | 11 | [[11-SQL-Database-Agent]] | SQLDatabaseToolkit, building an autonomous DB agent |
 | 12 | [[12-Memory-and-Conversations]] | MessagesPlaceholder, chat history, follow-up conversations |
+| 13 | [[13-RAG-Concepts]] | What is RAG, vectors, similarity search (concepts only, no code) |
 
 ## Reference Files
 
@@ -33,7 +34,7 @@ Read them in order. Each file links to the next. The concepts build on each othe
 
 ## What's NOT Covered Here
 
-- **RAG (Retrieval Augmented Generation)** — only the high-level concept is mentioned. It's a deep topic on its own.
+- **RAG implementation** — only the high-level concept is covered (Chapter 13). The actual code (embeddings, vector stores, document loaders, retrievers) is a deep topic on its own.
 - **LangGraph deep dive** — mentioned where relevant but not the focus of these notes.
 - **IDE setup / Git setup / UV package manager** — basic dev tooling, not LangChain-specific.
 - **OpenAI API key creation / billing** — standard setup, Google it if needed.

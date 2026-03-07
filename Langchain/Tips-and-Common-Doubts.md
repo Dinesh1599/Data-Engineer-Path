@@ -190,16 +190,6 @@ Or just pass the system prompt when creating the agent.
 
 ---
 
-## Conditional Chains — Known Issue
-
-### "The branches receive 'Positive'/'Negative' instead of the actual review"
-
-This is a real issue in the tutorial code. After classification, the original review text is lost — only the label flows forward. The LinkedIn/Instagram chains end up generating posts about the word "Positive" rather than the movie review.
-
-A fix would be to preserve the original input and pass it alongside the classification, but that requires restructuring the chain.
-
----
-
 ## Memory / Conversations
 
 ### "This conversation history approach seems static"
