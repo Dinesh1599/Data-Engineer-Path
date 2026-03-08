@@ -1,7 +1,6 @@
 # LangChain Beginner's Guide — Index
 
 > Personal notes from learning LangChain. Covers fundamentals through building autonomous SQL agents.
-> Built while following [Anshl Lamba's LangChain Full Course](https://github.com/anshlambagit/Langchain_Tutorial) + my own explorations.
 
 ## How to Use These Notes
 

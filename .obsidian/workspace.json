@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
+                "file": "Langchain/00-Index.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "00-Index"
             }
           }
         ]
@@ -181,6 +181,7 @@
   },
   "active": "a072463b41160124",
   "lastOpenFiles": [
+    "README.md",
     "Kafka/01 - Why Kafka Exists.md",
     "kafka2/Kafka.md",
     "kafka2",
@@ -193,7 +194,6 @@
     "Langchain/Unconfirmed 850174.crdownload",
     "Apache Airflow/Airflow.md",
     "Core Concepts of Airflow.md",
-    "README.md",
     "Kafka/Kafka.md",
     "Kafka/18 - Performance Tuning.md",
     "Python/Dictionaries.md",
