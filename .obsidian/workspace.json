@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Langchain/00-Index.md",
+                "file": "Python/Data Types and Structures.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00-Index"
+              "title": "Data Types and Structures"
             }
           }
         ]
@@ -181,6 +181,13 @@
   },
   "active": "a072463b41160124",
   "lastOpenFiles": [
+    "Langchain/06-Custom-Runnables.md",
+    "Langchain/05-LCEL-and-Chains.md",
+    "Langchain/04-Structured-Output.md",
+    "Langchain/03-Prompts-and-Templates.md",
+    "Langchain/02-Messages.md",
+    "Langchain/01-Fundamentals.md",
+    "Langchain/00-Index.md",
     "README.md",
     "Kafka/01 - Why Kafka Exists.md",
     "kafka2/Kafka.md",
@@ -189,8 +196,6 @@
     "Langchain/Packages-and-Classes.md",
     "Langchain/13-RAG-Concepts.md",
     "images/Visual Summary of how RAG works.png",
-    "Langchain/00-Index.md",
-    "Langchain/01-Fundamentals.md",
     "Langchain/Unconfirmed 850174.crdownload",
     "Apache Airflow/Airflow.md",
     "Core Concepts of Airflow.md",
@@ -207,11 +212,7 @@
     "Langchain/ packages used so far in langchain.md",
     "Functions",
     "images/Pasted image 20251124213202.png",
-    "New folder/Untitled.md",
     "Langchain",
-    "Kafka/24 - Kafka CLI Cheatsheet.md",
-    "Kafka/23 - Python + Kafka (confluent-kafka).md",
-    "Kafka/22 - Idempotent Consumers.md",
     "Kafka",
     "EDA/Data Engineering Process.canvas",
     "Untitled.canvas",
