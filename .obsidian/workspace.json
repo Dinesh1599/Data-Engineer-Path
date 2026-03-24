@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Data Types and Structures"
             }
+          },
+          {
+            "id": "8943a88a2b3c051d",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.7"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -179,7 +192,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a072463b41160124",
+  "active": "8943a88a2b3c051d",
   "lastOpenFiles": [
     "Kafka/03 - Brokers and Clusters.md",
     "Python/Data Types and Structures.md",
