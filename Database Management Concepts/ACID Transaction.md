@@ -1,4 +1,4 @@
-
+ 
 ACID is a set of rules that make sure a database transaction is _safe, correct, and reliable_.  
 Every time a bank transfers money, a shopping cart updates, or a record changes — ACID makes sure nothing breaks.
 
