@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Database Management Concepts/ACID Transaction.md",
+                "file": "Data warehouse/Databricks/Unity Catelog Hierarchy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ACID Transaction"
+              "title": "Unity Catelog Hierarchy"
             }
           }
         ]
@@ -181,14 +181,14 @@
   },
   "active": "8943a88a2b3c051d",
   "lastOpenFiles": [
-    "Database Management Concepts/Data Dictionary.md",
+    "Data warehouse/Databricks/Unity Catalog.md",
     "Database Management Concepts/ACID Transaction.md",
+    "Database Management Concepts/Data Dictionary.md",
     "Spark/Spark Architecture.md",
     "Python/Data Types and Structures.md",
     "Data warehouse/Snowflake/Clustering.md",
     "Data warehouse/Snowflake/Caching.md",
     "Data warehouse/Databricks/Unity Catelog Hierarchy.md",
-    "Data warehouse/Databricks/Unity Catalog.md",
     "Kafka/03 - Brokers and Clusters.md",
     "Langchain/06-Custom-Runnables.md",
     "Langchain/05-LCEL-and-Chains.md",
