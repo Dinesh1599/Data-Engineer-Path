@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data warehouse/Databricks/16 - Databricks vs Snowflake.md",
-                "mode": "source",
+                "file": "Data warehouse/Databricks/00 - Index.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "16 - Databricks vs Snowflake"
+              "title": "00 - Index"
             }
           }
         ]
@@ -181,23 +181,23 @@
   },
   "active": "bec77e688b6e2928",
   "lastOpenFiles": [
-    "Data warehouse/Databricks/17 - Lakeflow.md",
-    "Data warehouse/Databricks/16 - Databricks vs Snowflake.md",
-    "Data warehouse/Databricks/15 - Debugging Slow Queries.md",
-    "Data warehouse/Databricks/14 - Cost Optimization.md",
-    "Data warehouse/Databricks/13 - DDL Management.md",
-    "Data warehouse/Databricks/12 - CICD for Databricks.md",
-    "Data warehouse/Databricks/11 - Incremental Loads.md",
-    "Data warehouse/Databricks/10 - ADF Integration.md",
-    "Data warehouse/Databricks/09 - Compute and Clusters.md",
-    "Data warehouse/Databricks/08 - Window Functions.md",
-    "Data warehouse/Databricks/07 - Query Optimization.md",
-    "Data warehouse/Databricks/06 - Storage Optimization.md",
-    "Data warehouse/Databricks/05 - Spark Internals.md",
-    "Data warehouse/Databricks/04 - Unity Catalog.md",
-    "Data warehouse/Databricks/03 - Medallion Architecture.md",
-    "Data warehouse/Databricks/02 - Delta Lake.md",
     "Data warehouse/Databricks/01 - What is Databricks.md",
+    "Data warehouse/Databricks/02 - Delta Lake.md",
+    "Data warehouse/Databricks/03 - Medallion Architecture.md",
+    "Data warehouse/Databricks/04 - Unity Catalog.md",
+    "Data warehouse/Databricks/05 - Spark Internals.md",
+    "Data warehouse/Databricks/06 - Storage Optimization.md",
+    "Data warehouse/Databricks/07 - Query Optimization.md",
+    "Data warehouse/Databricks/08 - Window Functions.md",
+    "Data warehouse/Databricks/09 - Compute and Clusters.md",
+    "Data warehouse/Databricks/10 - ADF Integration.md",
+    "Data warehouse/Databricks/11 - Incremental Loads.md",
+    "Data warehouse/Databricks/12 - CICD for Databricks.md",
+    "Data warehouse/Databricks/13 - DDL Management.md",
+    "Data warehouse/Databricks/14 - Cost Optimization.md",
+    "Data warehouse/Databricks/15 - Debugging Slow Queries.md",
+    "Data warehouse/Databricks/16 - Databricks vs Snowflake.md",
+    "Data warehouse/Databricks/17 - Lakeflow.md",
     "Data warehouse/Databricks/00 - Index.md",
     "02 - Delta Lake Delta Lake.md",
     "README.md",

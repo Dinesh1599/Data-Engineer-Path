@@ -74,8 +74,7 @@ Use Debezium or Oracle GoldenGate to capture DELETE events from Oracle's redo lo
 | Full-key reconciliation | Daily/weekly | No | Low-Medium |
 | CDC | Real-time | Yes (enable logs) | High |
 
-> [!tip] For insurance
-> Soft deletes are preferred — regulators want to know WHAT was deleted and WHEN, not just that something is missing.
+
 
 ---
 

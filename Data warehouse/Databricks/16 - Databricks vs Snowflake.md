@@ -19,14 +19,14 @@
 
 ## Optimization Concepts Mapped
 
-| Concept | Databricks | Snowflake |
-|---------|-----------|-----------|
-| File compaction | [[06 - Storage Optimization#OPTIMIZE|OPTIMIZE]] (manual) | Automatic |
-| Data sorting | [[06 - Storage Optimization#Z-ORDER|Z-ORDER]] / Liquid Clustering | Clustering Keys + Auto Clustering |
-| Dead file cleanup | [[06 - Storage Optimization#VACUUM|VACUUM]] (manual) | Automatic |
-| Query inspection | Spark UI + `.explain()` | Query Profile |
-| Caching | Manual (`.cache()`) | Automatic (3-layer) |
-| Join optimization | Broadcast hint, AQE | Automatic |
+| Concept           | Databricks                           | Snowflake                     |                                   |
+| ----------------- | ------------------------------------ | ----------------------------- | --------------------------------- |
+| File compaction   | [[06 - Storage Optimization#OPTIMIZE | OPTIMIZE]] (manual)           | Automatic                         |
+| Data sorting      | [[06 - Storage Optimization#Z-ORDER  | Z-ORDER]] / Liquid Clustering | Clustering Keys + Auto Clustering |
+| Dead file cleanup | [[06 - Storage Optimization#VACUUM   | VACUUM]] (manual)             | Automatic                         |
+| Query inspection  | Spark UI + `.explain()`              | Query Profile                 |                                   |
+| Caching           | Manual (`.cache()`)                  | Automatic (3-layer)           |                                   |
+| Join optimization | Broadcast hint, AQE                  | Automatic                     |                                   |
 
 ## When to Choose Which
 
@@ -43,9 +43,6 @@
 - SQL-first team with limited Spark experience
 - Cost predictability matters most
 - Easy cross-organization data sharing needed
-
-> [!tip] Interview one-liner
-> "Snowflake is the best data warehouse. Databricks is the best data platform. For ETL-heavy workloads with open formats → Databricks. For SQL-first analytics with zero maintenance → Snowflake."
 
 ---
 
