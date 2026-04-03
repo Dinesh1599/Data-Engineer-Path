@@ -1,7 +1,3 @@
----
-tags: [sql, window-functions, row-number, rank, lag, lead]
-aliases: [Window Functions, ROW_NUMBER, LAG, LEAD]
----
 
 # Window Functions
 

@@ -1,7 +1,3 @@
----
-tags: [databricks, incremental, watermark, cdc, hard-deletes]
-aliases: [Incremental Loads, Watermark, CDC, Hard Deletes]
----
 
 # Incremental Loads
 

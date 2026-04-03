@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5129e71ad9a70aa0",
+        "id": "dc300c57f1350f17",
         "type": "tabs",
         "children": [
           {
-            "id": "8943a88a2b3c051d",
+            "id": "bec77e688b6e2928",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Data warehouse/Databricks/16 - Databricks vs Snowflake.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "16 - Databricks vs Snowflake"
             }
           }
         ]
@@ -175,7 +179,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8943a88a2b3c051d",
+  "active": "bec77e688b6e2928",
   "lastOpenFiles": [
     "Data warehouse/Databricks/17 - Lakeflow.md",
     "Data warehouse/Databricks/16 - Databricks vs Snowflake.md",
@@ -195,14 +199,14 @@
     "Data warehouse/Databricks/02 - Delta Lake.md",
     "Data warehouse/Databricks/01 - What is Databricks.md",
     "Data warehouse/Databricks/00 - Index.md",
+    "02 - Delta Lake Delta Lake.md",
+    "README.md",
+    "Core Concepts of Airflow.md",
     "Data warehouse/Databricks/Unity Catalog.md",
     "Data warehouse/Databricks/Unity Catelog Hierarchy.md",
     "Database Management Concepts/ACID Transaction.md",
     "Database Management Concepts/Data Dictionary.md",
     "Spark/Spark Architecture.md",
-    "Python/Data Types and Structures.md",
-    "Data warehouse/Snowflake/Clustering.md",
-    "Data warehouse/Snowflake/Caching.md",
     "kafka2",
     "images/Visual Summary of how RAG works.png",
     "Langchain/Unconfirmed 850174.crdownload",

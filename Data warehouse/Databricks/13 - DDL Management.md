@@ -1,7 +1,3 @@
----
-tags: [databricks, ddl, schema, migration, production]
-aliases: [DDL Management, Schema Migration]
----
 
 # DDL Management in Production
 

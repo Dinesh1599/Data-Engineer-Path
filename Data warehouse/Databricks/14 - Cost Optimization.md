@@ -1,7 +1,3 @@
----
-tags: [databricks, cost, storage-tiering, spot-instances]
-aliases: [Cost Optimization, Storage Tiering]
----
 
 # Cost Optimization
 

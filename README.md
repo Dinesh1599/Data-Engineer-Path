@@ -119,6 +119,7 @@ This is a living system, not a finished product.
 
 ---
 ## New Update
+- Added notes on Databricks (April 2026)
 - Added notes for LangChain (March 2026)
 
 ---

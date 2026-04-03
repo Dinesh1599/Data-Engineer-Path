@@ -1,7 +1,3 @@
----
-tags: [databricks, data-engineering, index]
-aliases: [Databricks Guide, DE Guide]
----
 
 # 🧱 Databricks — Complete Guide for Data Engineers
 
@@ -14,12 +10,12 @@ aliases: [Databricks Guide, DE Guide]
 
 ## 📚 Core Concepts
 
-| # | Topic | What you'll learn |
-|---|-------|-------------------|
-| 1 | [[01 - What is Databricks]] | Platform overview, Lakehouse architecture |
-| 2 | [[02 - Delta Lake]] | Parquet + transaction log, MERGE, time travel, managed vs external tables |
-| 3 | [[03 - Medallion Architecture]] | Bronze / Silver / Gold — why you need all three |
-| 4 | [[04 - Unity Catalog]] | 3-level namespace, governance, permissions |
+| #   | Topic                           | What you'll learn                                                         |
+| --- | ------------------------------- | ------------------------------------------------------------------------- |
+| 1   | [[01 - What is Databricks]]     | Platform overview, Lakehouse architecture                                 |
+| 2   | [[02 - Delta Lake]]             | Parquet + transaction log, MERGE, time travel, managed vs external tables |
+| 3   | [[03 - Medallion Architecture]] | Bronze / Silver / Gold — why you need all three                           |
+| 4   | [[04 - Unity Catalog]]          | 3-level namespace, governance, permissions                                |
 
 ## ⚙️ Spark Engine
 
@@ -71,7 +67,3 @@ graph TB
     LF --> IL
     LF --> DL
 ```
-
----
-
-*Created: March 2026 | Author: Dinesh Udayan | Purpose: Public Data Engineering Knowledge Base*

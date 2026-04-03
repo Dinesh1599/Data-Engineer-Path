@@ -1,7 +1,3 @@
----
-tags: [databricks, delta-lake, storage, parquet]
-aliases: [Delta Lake, Delta]
----
 
 # Delta Lake
 

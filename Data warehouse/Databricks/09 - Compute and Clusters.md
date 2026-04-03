@@ -1,7 +1,3 @@
----
-tags: [databricks, clusters, serverless, spot-instances, compute]
-aliases: [Compute, Clusters, Serverless]
----
 
 # Compute & Clusters
 

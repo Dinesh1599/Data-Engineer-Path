@@ -1,7 +1,3 @@
----
-tags: [databricks, spark, partitions, shuffle, skew]
-aliases: [Spark Internals, Partitions, Shuffle]
----
 
 # Spark Internals
 

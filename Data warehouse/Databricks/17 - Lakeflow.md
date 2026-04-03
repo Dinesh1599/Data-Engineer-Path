@@ -1,7 +1,3 @@
----
-tags: [databricks, lakeflow, etl, dlt, ingestion, orchestration]
-aliases: [Lakeflow, Lakeflow Connect, Lakeflow Declarative Pipelines, Delta Live Tables, DLT]
----
 
 # Databricks Lakeflow
 

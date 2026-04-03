@@ -1,7 +1,3 @@
----
-tags: [databricks, delta-lake, optimize, zorder, vacuum, storage]
-aliases: [Storage Optimization, OPTIMIZE, Z-ORDER, VACUUM]
----
 
 # Storage Optimization
 

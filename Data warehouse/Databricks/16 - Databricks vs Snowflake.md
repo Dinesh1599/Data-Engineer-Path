@@ -1,7 +1,3 @@
----
-tags: [databricks, snowflake, comparison]
-aliases: [Databricks vs Snowflake]
----
 
 # Databricks vs Snowflake
 

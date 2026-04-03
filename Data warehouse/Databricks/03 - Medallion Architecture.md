@@ -1,7 +1,3 @@
----
-tags: [databricks, medallion, bronze, silver, gold, architecture]
-aliases: [Medallion, Bronze Silver Gold]
----
 
 # Medallion Architecture (Bronze / Silver / Gold)
 

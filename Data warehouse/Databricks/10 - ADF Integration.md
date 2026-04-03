@@ -1,7 +1,3 @@
----
-tags: [databricks, adf, azure-data-factory, pipeline, shir]
-aliases: [ADF, Azure Data Factory, SHIR]
----
 
 # Azure Data Factory (ADF) Integration
 

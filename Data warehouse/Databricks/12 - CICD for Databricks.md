@@ -1,7 +1,3 @@
----
-tags: [databricks, cicd, devops, asset-bundles, terraform]
-aliases: [CI/CD, Databricks Asset Bundles, DABs]
----
 
 # CI/CD for Databricks
 

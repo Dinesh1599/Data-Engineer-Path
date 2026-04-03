@@ -1,7 +1,3 @@
----
-tags: [databricks, spark, optimization, pushdown, aqe, broadcast]
-aliases: [Query Optimization, Predicate Pushdown, AQE, Broadcast Join]
----
 
 # Query Optimization
 

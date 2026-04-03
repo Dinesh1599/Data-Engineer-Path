@@ -1,7 +1,3 @@
----
-tags: [databricks, unity-catalog, governance, security]
-aliases: [Unity Catalog, UC]
----
 
 # Unity Catalog
 

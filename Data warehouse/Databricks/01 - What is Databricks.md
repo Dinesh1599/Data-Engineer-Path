@@ -1,7 +1,3 @@
----
-tags: [databricks, overview, lakehouse]
-aliases: [Databricks Overview]
----
 
 # What is Databricks?
 
@@ -42,15 +38,15 @@ graph TB
     end
 ```
 
-| Feature | Data Lake | Data Warehouse | Lakehouse |
-|---------|-----------|----------------|-----------|
-| Storage cost | Low | High | Low |
-| ACID transactions | No | Yes | Yes ([[02 - Delta Lake|Delta Lake]]) |
-| Schema enforcement | No | Yes | Yes |
-| UPDATE / DELETE | No | Yes | Yes (Delta MERGE) |
-| Open format | Yes (Parquet) | No (proprietary) | Yes (Parquet + Delta log) |
-| ML support | Good | Poor | Good |
-| BI / SQL support | Poor | Good | Good |
+| Feature            | Data Lake     | Data Warehouse   | Lakehouse                  |
+| ------------------ | ------------- | ---------------- | -------------------------- |
+| Storage cost       | Low           | High             | Low                        |
+| ACID transactions  | No            | Yes              | Yes ([[02 - Delta Lake ]]) |
+| Schema enforcement | No            | Yes              | Yes                        |
+| UPDATE / DELETE    | No            | Yes              | Yes (Delta MERGE)          |
+| Open format        | Yes (Parquet) | No (proprietary) | Yes (Parquet + Delta log)  |
+| ML support         | Good          | Poor             | Good                       |
+| BI / SQL support   | Poor          | Good             | Good                       |
 
 > [!tip] One-liner
 > "Databricks is where you process data. Delta Lake is how you store it. Unity Catalog is how you govern it."

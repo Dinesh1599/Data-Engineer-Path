@@ -1,7 +1,3 @@
----
-tags: [databricks, debugging, spark-ui, performance]
-aliases: [Debugging, Spark UI, Slow Queries]
----
 
 # Debugging Slow Queries
 
