@@ -74,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5
+    "width": 281.5
   },
   "right": {
     "id": "07442132946b28e0",
@@ -175,7 +175,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bec77e688b6e2928",
+  "active": "8bb36002b09ef60b",
   "lastOpenFiles": [
     "EDA/EDA Flow.canvas",
     "EDA/Data Engineering Process.canvas",
