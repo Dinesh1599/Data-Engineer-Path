@@ -4,17 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "dc300c57f1350f17",
+        "id": "7c312689a970db4a",
         "type": "tabs",
         "children": [
           {
-            "id": "bec77e688b6e2928",
+            "id": "02c74e99ed7cf513",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "canvas",
+              "state": {
+                "file": "Data warehouse/Snowflake/RolesHierarchy.canvas",
+                "viewState": {
+                  "x": 210,
+                  "y": -50,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "RolesHierarchy"
             }
           }
         ]
@@ -175,8 +182,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8bb36002b09ef60b",
+  "active": "02c74e99ed7cf513",
   "lastOpenFiles": [
+    "Data warehouse/Snowflake/Roles.md",
+    "Data warehouse/Snowflake/Account access and Security.md",
+    "Data warehouse/Snowflake/Account Usage and Information Schema.md",
+    "Apache Airflow/Core Components and Architecture of Airflow.md",
+    "Apache Airflow/Airflow.md",
+    "dbt/DBT Testing.md",
     "EDA/EDA Flow.canvas",
     "EDA/Data Engineering Process.canvas",
     "2026-05-01.md",
@@ -201,11 +214,6 @@
     "Data warehouse/Databricks/06 - Storage Optimization.md",
     "Data warehouse/Databricks/07 - Query Optimization.md",
     "Data warehouse/Databricks/08 - Window Functions.md",
-    "Data warehouse/Databricks/09 - Compute and Clusters.md",
-    "Data warehouse/Databricks/10 - ADF Integration.md",
-    "Data warehouse/Databricks/11 - Incremental Loads.md",
-    "Data warehouse/Databricks/12 - CICD for Databricks.md",
-    "Data warehouse/Databricks/13 - DDL Management.md",
     "images/Visual Summary of how RAG works.png",
     "Langchain/Unconfirmed 850174.crdownload",
     "Functions",
