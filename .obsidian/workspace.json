@@ -11,14 +11,17 @@
             "id": "02c74e99ed7cf513",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "others(delete)/Rate Manual 09 01 2013.md",
-                "mode": "preview",
-                "source": false
+                "file": "Data warehouse/Snowflake/RolesHierarchy.canvas",
+                "viewState": {
+                  "x": 210,
+                  "y": -50,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "Rate Manual 09 01 2013"
+              "icon": "lucide-layout-dashboard",
+              "title": "RolesHierarchy"
             }
           }
         ]
@@ -182,8 +185,8 @@
   },
   "active": "02c74e99ed7cf513",
   "lastOpenFiles": [
-    "Data warehouse/Snowflake/RolesHierarchy.canvas",
     "others(delete)/Rate Manual 09 01 2013.md",
+    "Data warehouse/Snowflake/RolesHierarchy.canvas",
     "others(delete)",
     "Data warehouse/Snowflake/Roles.md",
     "Data warehouse/Snowflake/Account access and Security.md",
